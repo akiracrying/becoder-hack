@@ -17,8 +17,6 @@ def load_commits():
 
         commit_data = [commit.author.email, commit.message.lower(), list(commit.stats.files.keys())]
         commits_list.append(commit_data)
-        #print(commit.author, commit.message, list(commit.stats.files.keys()))
-        #print(commits_list)
     
     for isfix in range(0, len(commits_list)):
         if (commits_list[isfix][message].find("fix") != -1):
@@ -33,13 +31,21 @@ def load_commits():
                 error_guys[commits_list[isfix-1][author]] = {}
             for filename in correctly_detected:
                 if filename not in error_guys[commits_list[isfix-1][author]]:
-                    error_guys[commits_list[isfix-1][author]][filename] = 1
+                    error_guys[commits_list[isfix-1][author]][filename] = [1,0]
                 else:
-                    error_guys[commits_list[isfix-1][author]][filename]+=1
-                    
+                    error_guys[commits_list[isfix-1][author]][filename][0]+=1
+        else:
+            user_changed_files = commits_list[isfix-1][files]
+            if commits_list[isfix-1][author] not in error_guys:
+                error_guys[commits_list[isfix-1][author]] = {}
+            for filename in user_changed_files:
+                if filename not in error_guys[commits_list[isfix-1][author]]:
+                    error_guys[commits_list[isfix-1][author]][filename] = [0,1]
+                else:
+                    error_guys[commits_list[isfix-1][author]][filename][1]+=1
+
     for check in error_guys:
         print(check, error_guys[check])
-    #for i in commits_list:
-    #    print(i)
+
 if __name__ == "__main__":
     load_commits()   
