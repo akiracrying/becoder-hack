@@ -17,6 +17,8 @@ def hypothesis_1_vse(error_guys):
     kb_otk = []
     is_avg_by_people = {}
     avg_array = []
+    more_avg_count = 0
+    all_avg_count = 0
     for eGuy in error_guys:
         for file in error_guys.get(eGuy):
             true_files = error_guys.get(eGuy).get(file)[1]
@@ -32,6 +34,9 @@ def hypothesis_1_vse(error_guys):
         avg_array.append(avg)
         for i in avg_in_one_file:
             kb_otk.append(i - avg)
+            if i > avg:
+                more_avg_count += 1
+            all_avg_count += 1
         is_avg_by_people.update({eGuy: kb_otk})
         avg_in_one_file = []
         kb_otk = []
@@ -39,16 +44,30 @@ def hypothesis_1_vse(error_guys):
     for human in is_avg_by_people:
         f_deviation.write("------------------------------------------------------\n")
         f_deviation.write(str(human) + " " + str(is_avg_by_people.get(human)) + "\n")
-    for i in range(0, len(list(is_avg_by_people.keys()))):
-        x = np.arange(0, len(is_avg_by_people.get(list(is_avg_by_people.keys())[i])), 1)
-        y = np.array(is_avg_by_people.get(list(is_avg_by_people.keys())[i]))
-        y_1 = np.array([avg_array[i] for _ in range(0, len(is_avg_by_people.get(list(is_avg_by_people.keys())[i])))])
-        plt.figure(figsize=(12, 7))
-        plt.plot(x, y, marker='.')
-        plt.plot(x, y_1)
-        plt.title(str(i + 1) + "-ый разработчик")
-        plt.grid(True)
-        plt.show()
+    number = 1
+    while number != 0:
+        print("Enter number of developer to view graph between 1 and ", len(list(is_avg_by_people.keys())), ":")
+        print("Enter 0 code to exit program")
+        try:
+            number_input = input()
+            int(number_input)
+            number = int(number_input)
+            if 0 < number < len(list(is_avg_by_people.keys())):
+                x = np.arange(0, len(is_avg_by_people.get(list(is_avg_by_people.keys())[number - 1])), 1)
+                y = np.array(is_avg_by_people.get(list(is_avg_by_people.keys())[number - 1]))
+                y_1 = np.array(
+                    [avg_array[number - 1] for _ in range(0,
+                                                          len(is_avg_by_people.get(
+                                                              list(is_avg_by_people.keys())[number - 1])))])
+                plt.figure(figsize=(12, 7))
+                plt.plot(x, y, marker='.')
+                plt.plot(x, y_1)
+                plt.title(str(number) + "-ый разработчик")
+                plt.grid(True)
+                plt.show()
+        except Exception as exp:
+            print(exp)
+            pass
 
 
 def hypothesis_1_ne_vse(error_guys):
