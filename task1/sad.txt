@@ -1,0 +1,20 @@
+'package-lock.json'  and this=>  package-lock.json
+'.npmignore'  and this=>  .npmignore
+'package.json'  and this=>  package.json
+'src/subscribables/subscribable.js'  and this=>  src/subscribables/subscribable.js
+'spec/blank.html'  and this=>  spec/blank.html
+'spec/subscribableBehaviors.js'  and this=>  spec/subscribableBehaviors.js
+'spec/lib/jasmine-1.2.0/jasmine-tap.js'  and this=>  spec/lib/jasmine-1.2.0/jasmine-tap.js
+'build/fragments/version.txt'  and this=>  build/fragments/version.txt
+'src/binding/defaultBindings/event.js'  and this=>  src/binding/defaultBindings/event.js
+'spec/{editDetectionBehaviors.js => arrayToDomEditDetectionBehaviors.js}'  and this=>  spec/{editDetectionBehaviors.js => arrayToDomEditDetectionBehaviors.js}
+'spec/lib/JSSpec.css'  and this=>  spec/lib/JSSpec.css
+'spec/lib/JSSpec.extensions.js'  and this=>  spec/lib/JSSpec.extensions.js
+'spec/lib/JSSpec.js'  and this=>  spec/lib/JSSpec.js
+'spec/lib/diff_match_patch.js'  and this=>  spec/lib/diff_match_patch.js
+'spec/lib/JSSpec.extensions.js'  and this=>  spec/lib/JSSpec.extensions.js
+'src/binding/defaultBindings/if.js'  and this=>  src/binding/defaultBindings/if.js
+'src/binding/defaultBindings/ifnot.js'  and this=>  src/binding/defaultBindings/ifnot.js
+'src/binding/defaultBindings/with.js'  and this=>  src/binding/defaultBindings/with.js
+'spec/{jsonExpressionRewritingBehaviors.js => expressionRewritingBehaviors.js}'  and this=>  spec/{jsonExpressionRewritingBehaviors.js => expressionRewritingBehaviors.js}
+'src/binding/{jsonExpressionRewriting.js => expressionRewriting.js}'  and this=>  src/binding/{jsonExpressionRewriting.js => expressionRewriting.js}
