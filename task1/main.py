@@ -5,8 +5,55 @@ author = 0
 message = 1
 files = 2
 
-def hypothesis():
-    ...
+def hypothesis_1_vse(error_guys):
+    global file
+    avgInOneFile = []
+    kbOtk = []
+    isAvgByPeople = {}
+    for eGuy in error_guys:
+        for file in error_guys.get(eGuy):
+            trueFiles = error_guys.get(eGuy).get(file)[1]
+            falseFiles = error_guys.get(eGuy).get(file)[0]
+            if (trueFiles != 0):
+                avgInOneFile.append(falseFiles / trueFiles)
+            else:
+                avgInOneFile.append(0.0)
+        sumAvg = 0
+        for i in avgInOneFile:
+            sumAvg += i
+        avg = sumAvg / len(avgInOneFile)
+        for i in avgInOneFile:
+            kbOtk.append(i - avg)
+        isAvgByPeople.update({eGuy: kbOtk})
+        avgInOneFile = []
+        kbOtk = []
+    print(isAvgByPeople)
+
+def hypothesis_1_ne_vse(error_guys):
+    global file
+    avgInOneFile = []
+    moreThanAvg = []
+    moreThanAvgByPeople = {}
+    for eGuy in error_guys:
+        for file in error_guys.get(eGuy):
+            trueFiles = error_guys.get(eGuy).get(file)[1]
+            falseFiles = error_guys.get(eGuy).get(file)[0]
+            if(trueFiles != 0):
+                avgInOneFile.append(falseFiles/trueFiles)
+            else:
+                avgInOneFile.append(0.0)
+        sumAvg = 0
+        for i in avgInOneFile:
+            sumAvg+=i
+        avg = sumAvg / len(avgInOneFile)
+        for i in avgInOneFile:
+            if(i > avg):
+                moreThanAvg.append(i)
+        moreThanAvgByPeople.update({eGuy:moreThanAvg})
+        moreThanAvg = []
+        avgInOneFile = []
+    print(moreThanAvgByPeople)
+
 
 def prob(array, commits):
     prob_guys = {}
@@ -37,7 +84,7 @@ def prob(array, commits):
         print(final, round(final_prob_with_commit[final]* 100, 4), "%")
         
 def load_commits():
-    repo = Repo("C:\\Users\\Timon\Desktop\\becoder-hack\\task1\\knockout")
+    repo = Repo("D:\\selfPro\\becoder-hack\\rep2\\memos")
     commits_list = []
     error_guys = {}
 
@@ -50,7 +97,6 @@ def load_commits():
 
     for isfix in range(0, len(commits_list)-1):
         if (commits_list[isfix][message].find("fix") != -1):
-
             correctly_detected = []
             fixed_files = commits_list[isfix][files]
             for i in range(isfix+1, len(commits_list)):
@@ -81,8 +127,9 @@ def load_commits():
                     error_guys[commits_list[isfix+1][author]][filename][1]+=1
 
     #for check in error_guys:
-    #    print(check, error_guys[check])
-    prob(error_guys, commits_list)
+        #print(check, error_guys[check])
+    #prob(error_guys, commits_list)
+    hypothesis_1_vse(error_guys)
 
 
 if __name__ == "__main__":
