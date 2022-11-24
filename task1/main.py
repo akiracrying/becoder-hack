@@ -31,13 +31,16 @@ def prob(array, commits):
                 sum *= (1 -(prob_guys[commit[0]][filename]))
             except Exception as exp:
                 pass
-        final_prob_with_commit[commit[3]] = 1 - sum
+        if commit[4] is True:
+            final_prob_with_commit["FIXED_" + commit[3].hexsha] = 1 - sum
+        else:
+            final_prob_with_commit[commit[3]] = 1 - sum
 
     for final in final_prob_with_commit:
         print(final, round(final_prob_with_commit[final]* 100, 4), "%")
         
 def load_commits():
-    repo = Repo("C:\\Users\\Timon\Desktop\\becoder-hack\\task1\\knockout")
+    repo = Repo("~/Documents/Projects/memos")
     commits_list = []
     error_guys = {}
 
@@ -45,7 +48,7 @@ def load_commits():
     commits = list(repo.iter_commits())
     for commit in commits:
 
-        commit_data = [commit.author.email, commit.message.lower(), list(commit.stats.files.keys()), commit]
+        commit_data = [commit.author.email, commit.message.lower(), list(commit.stats.files.keys()), commit, False]
         commits_list.append(commit_data)
 
     for isfix in range(0, len(commits_list)-1):
@@ -67,6 +70,7 @@ def load_commits():
                     error_guys[commits_list[i][author]] = {}
                 for filename in correctly_detected:
                     if filename not in error_guys[commits_list[i][author]]:
+                        commits_list[i][4] = True
                         error_guys[commits_list[i][author]][filename] = [1,0]
                     else:
                         error_guys[commits_list[i][author]][filename][0]+=1
