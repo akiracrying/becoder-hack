@@ -21,17 +21,17 @@ def prob(array, commits):
     for commit in commits:
         sum = 1
         if commit[0] not in prob_guys:
-            final_prob_with_commit[commit[0]+commit[1]] = 0
+            final_prob_with_commit[commit[3]] = 0
             continue
         for filename in commit[2]:
             try:
                 sum *= (1 -(prob_guys[commit[0]][filename]))
             except Exception as exp:
                 pass
-        final_prob_with_commit[commit[0]] = 1 - sum
-    print(final_prob_with_commit)
-    #for final in final_prob_with_commit:
-    #    print(final, final_prob_with_commit[final])
+        final_prob_with_commit[commit[3]] = 1 - sum
+
+    for final in final_prob_with_commit:
+        print(final, final_prob_with_commit[final])
         
 def load_commits():
     repo = Repo("C:\\Users\\Timon\Desktop\\becoder-hack\\task1\\knockout")
@@ -42,9 +42,9 @@ def load_commits():
     commits = list(repo.iter_commits())
     for commit in commits:
 
-        commit_data = [commit.author.email, commit.message.lower(), list(commit.stats.files.keys())]
+        commit_data = [commit.author.email, commit.message.lower(), list(commit.stats.files.keys()), commit]
         commits_list.append(commit_data)
-    
+
     for isfix in range(0, len(commits_list)-1):
         if (commits_list[isfix][message].find("fix") != -1):
 
