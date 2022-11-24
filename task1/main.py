@@ -5,6 +5,9 @@ author = 0
 message = 1
 files = 2
 
+def hypothesis():
+    ...
+
 def prob(array, commits):
     prob_guys = {}
     for guy in array:
@@ -21,7 +24,7 @@ def prob(array, commits):
     for commit in commits:
         sum = 1
         if commit[0] not in prob_guys:
-            final_prob_with_commit[commit[3]] = 0
+            final_prob_with_commit[commit[3]] = 0.0
             continue
         for filename in commit[2]:
             try:
@@ -31,7 +34,7 @@ def prob(array, commits):
         final_prob_with_commit[commit[3]] = 1 - sum
 
     for final in final_prob_with_commit:
-        print(final, final_prob_with_commit[final])
+        print(final, round(final_prob_with_commit[final]* 100, 4), "%")
         
 def load_commits():
     repo = Repo("C:\\Users\\Timon\Desktop\\becoder-hack\\task1\\knockout")
