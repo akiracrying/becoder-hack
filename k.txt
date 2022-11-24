@@ -1,0 +1,4888 @@
+Author: boojack:	chore: fix typo (#551)
+README.md
+
+Author: Zeng1998:	fix: cursor style (#549)
+web/src/less/memo.less
+
+Author: boojack:	chore: update readme (#548)
+README.md
+
+Author: boojack:	feat: add French i18n item (#547)
+api/user_setting.go
+web/src/components/Settings/PreferencesSection.tsx
+web/src/i18n.ts
+web/src/locales/fr.json
+web/src/pages/Auth.tsx
+web/src/types/i18n.d.ts
+
+Author: baptiste313:	chore: addition of the French translation and small correction for the English (#546)
+web/src/locales/en.json
+web/src/locales/fr.json
+
+Author: boojack:	feat: add username field (#544)
+api/auth.go
+api/user.go
+server/acl.go
+server/auth.go
+server/rss.go
+store/db/migration/dev/LATEST__SCHEMA.sql
+store/db/migration/prod/0.8/01__user_username.sql
+store/db/migration/prod/0.8/02__memo_relation.sql
+store/db/seed/10001__user.sql
+store/user.go
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/UpdateAccountDialog.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/components/UserBanner.tsx
+web/src/css/tailwind.css
+web/src/helpers/api.ts
+web/src/less/change-password-dialog.less
+web/src/less/editor.less
+web/src/less/global.less
+web/src/less/memo-content.less
+web/src/less/search-bar.less
+web/src/less/settings/member-section.less
+web/src/less/settings/my-account-section.less
+web/src/less/usage-heat-map.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/pages/Auth.tsx
+web/src/pages/Explore.tsx
+web/src/pages/MemoDetail.tsx
+web/src/types/modules/user.d.ts
+
+Author: boojack:	chore: update data initial requests (#538)
+api/system.go
+server/system.go
+web/src/App.tsx
+web/src/components/AboutSiteDialog.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/UpdateVersionBanner.tsx
+web/src/pages/Auth.tsx
+web/src/router/index.tsx
+web/src/services/globalService.ts
+web/src/services/userService.ts
+web/src/store/modules/global.ts
+web/src/types/modules/system.d.ts
+
+Author: boojack:	chore: update i18n for visibility (#537)
+web/src/locales/en.json
+
+Author: Zeng1998:	feat: esc to cancel editing (#532)
+web/src/components/MemoEditor.tsx
+
+Author: Zeng1998:	fix: empty filter value (#529)
+web/src/components/CreateShortcutDialog.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: Zeng1998:	fix: update issue template (#530)
+.github/ISSUE_TEMPLATE/bug_report.yml
+
+Author: Yarden Shoham:	feat: extend validation config max length (#523)
+web/src/pages/Auth.tsx
+
+Author: boojack:	fix: tag regexp (#518)
+server/tag.go
+
+Author: boojack:	chore: update issue template (#517)
+.github/ISSUE_TEMPLATE/bug_report.yml
+.github/ISSUE_TEMPLATE/feature_request.yml
+
+Author: boojack:	chore: code clean (#516)
+server/acl.go
+server/http_getter.go
+server/resource.go
+server/server.go
+
+Author: Zeng1998:	chore: update i18 for memo sharing (#513)
+web/src/components/ShareMemoImageDialog.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: Zeng1998:	chore: bgcolor of memo share image (#508)
+web/src/components/ShareMemoImageDialog.tsx
+
+Author: boojack:	chore: add license to README (#506)
+README.md
+
+Author: boojack:	chore: update seed data (#507)
+store/db/seed/10002__memo.sql
+
+Author: boojack:	feat: get image blob in backend (#495)
+plugin/http_getter/html_meta.go
+plugin/http_getter/html_meta_test.go
+plugin/http_getter/http_getter.go
+plugin/http_getter/image.go
+plugin/http_getter/image_test.go
+plugin/http_getter/util.go
+server/crawler.go
+server/http_getter.go
+server/resource.go
+web/src/labs/marked/parser/Image.ts
+
+Author: boojack:	fix: image scrollbar (#494)
+web/src/css/tailwind.css
+web/src/less/image.less
+web/src/less/memo-resources.less
+web/src/less/share-memo-image-dialog.less
+web/src/main.tsx
+
+Author: boojack:	chore: update db filesize access control (#493)
+server/acl.go
+server/system.go
+
+Author: boojack:	feat: add crawler plugin (#492)
+.github/workflows/tests.yml
+go.mod
+go.sum
+plugin/crawler/crawler.go
+plugin/crawler/website.go
+plugin/crawler/website_test.go
+server/crawler.go
+server/server.go
+
+Author: boojack:	chore: update dependencies version (#491)
+.github/workflows/codeql.yml
+.github/workflows/tests.yml
+Dockerfile
+
+Author: Zeng1998:	chore: update i18 for settings (#490)
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/SystemSection.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: boojack:	chore: update dev version (#489)
+server/version/version.go
+store/db/db.go
+store/db/migration/dev/LATEST__SCHEMA.sql
+store/db/migration/prod/0.8/00__migration_history.sql
+store/db/migration/prod/0.8/01__memo_relation.sql
+store/db/migration_history.go
+store/db/table.go
+
+Author: boojack:	feat: add database filesize in UI (#488)
+api/system.go
+server/resource.go
+server/system.go
+server/version/version.go
+web/src/App.tsx
+web/src/components/Settings/SystemSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/helpers/storage.ts
+web/src/less/base-dialog.less
+web/src/less/settings/system-section.less
+web/src/less/share-memo-image-dialog.less
+web/src/locales/en.json
+web/src/types/modules/system.d.ts
+
+Author: boojack:	chore: add toast to system settings (#486)
+web/src/components/Settings/SystemSection.tsx
+
+Author: boojack:	chore: update emoji picker (#483)
+web/src/components/Editor/EmojiPicker.tsx
+
+Author: boojack:	chore: update share memo image (#482)
+web/src/components/MemoResources.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/css/index.css
+web/src/less/base-dialog.less
+web/src/less/common-dialog.less
+web/src/less/common/selector.less
+web/src/less/daily-memo.less
+web/src/less/daily-review-dialog.less
+web/src/less/editor.less
+web/src/less/global.less
+web/src/less/home.less
+web/src/less/image.less
+web/src/less/memo-content.less
+web/src/less/memo-list.less
+web/src/less/memo-resources.less
+web/src/less/memo.less
+web/src/less/memos-header.less
+web/src/less/mixin.less
+web/src/less/preview-image-dialog.less
+web/src/less/resources-dialog.less
+web/src/less/search-bar.less
+web/src/less/setting-dialog.less
+web/src/less/share-memo-image-dialog.less
+web/src/less/shortcut-list.less
+web/src/less/siderbar.less
+web/src/less/tag-list.less
+
+Author: Stephen Zhou:	feat: fold memos according to horizontal rule (#478)
+web/src/components/MemoContent.tsx
+web/src/less/memo-content.less
+
+Author: Stephen Zhou:	feat: parser for horizontal rule (#477)
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/HorizontalRules.ts
+web/src/labs/marked/parser/index.ts
+web/src/less/memo-content.less
+
+Author: boojack:	chore: remove mark memo (#476)
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/labs/marked/parser/Mark.ts
+web/src/labs/marked/parser/index.ts
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/services/editorStateService.ts
+web/src/store/modules/editor.ts
+
+Author: boojack:	chore: remove memo card dialog (#475)
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/less/memo-card-dialog.less
+web/src/less/memo.less
+
+Author: Mahoo Huang:	fix: abnormal link regex (#474)
+web/src/labs/marked/parser/Link.ts
+
+Author: boojack:	feat: update sharing memo image (#473)
+web/src/components/ShareMemoImageDialog.tsx
+web/src/less/share-memo-image-dialog.less
+
+Author: boojack:	chore: update cancel edit button style (#472)
+web/src/components/MemoEditor.tsx
+web/src/less/memo-editor.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: Zeng1998:	fix: clear query text (#469)
+web/src/components/MemoFilter.tsx
+web/src/components/SearchBar.tsx
+
+Author: Zeng1998:	chore: change memo card's bg color (#471)
+web/src/less/memo-card-dialog.less
+
+Author: boojack:	feat: additional script system setting (#467)
+api/system.go
+api/system_setting.go
+server/system.go
+web/src/App.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/Settings/SystemSection.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/types/modules/system.d.ts
+
+Author: Stephen Zhou:	feat: folding options (#459)
+web/src/components/MemoContent.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/helpers/consts.ts
+web/src/hooks/useLocalStorage.ts
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: Zeng1998:	fix: duration query string (#465)
+web/src/store/modules/location.ts
+
+Author: Stephen Zhou:	chore: change rss item title (#464)
+server/rss.go
+
+Author: Zeng1998:	feat: visibility click filter (#463)
+web/src/components/Memo.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/services/locationService.ts
+web/src/store/modules/location.ts
+
+Author: Stephen Zhou:	fix: route confusion entering from non-home page (#460)
+web/src/services/locationService.ts
+web/src/store/modules/location.ts
+
+Author: Zeng1998:	feat: add visibility filter (#461)
+web/src/components/CreateShortcutDialog.tsx
+web/src/helpers/filter.ts
+web/src/types/filter.d.ts
+
+Author: boojack:	refactor: remove mixin colors (#458)
+web/src/less/change-memo-created-ts-dialog.less
+web/src/less/change-password-dialog.less
+web/src/less/change-resource-filename-dialog.less
+web/src/less/common/date-picker.less
+web/src/less/common/selector.less
+web/src/less/create-shortcut-dialog.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo-editor.less
+web/src/less/memo-filter.less
+web/src/less/mixin.less
+web/src/less/tag-list.less
+
+Author: boojack:	chore: remove unused visibility selector (#457)
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/less/explore.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo-detail.less
+web/src/less/memo-editor.less
+web/src/pages/Explore.tsx
+web/src/pages/MemoDetail.tsx
+
+Author: Zeng1998:	fix: image url extraction (#453)
+web/src/components/Memo.tsx
+
+Author: boojack:	chore: update editor style (#456)
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/ResourceIcon.tsx
+web/src/less/about-site-dialog.less
+web/src/less/archived-memo-dialog.less
+web/src/less/auth.less
+web/src/less/memo-editor.less
+web/src/less/memo-resources.less
+web/src/less/settings/member-section.less
+web/src/less/settings/my-account-section.less
+web/src/less/settings/preferences-section.less
+web/src/less/toast.less
+web/src/less/usage-heat-map.less
+web/src/less/user-banner.less
+
+Author: boojack:	chore: remove mobile editor style user setting (#455)
+api/user_setting.go
+web/src/components/MemoEditor.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/less/memo-editor.less
+web/src/services/userService.ts
+web/src/types/modules/setting.d.ts
+
+Author: boojack:	feat: update editor style (#454)
+web/src/components/MemoEditor.tsx
+web/src/less/editor.less
+web/src/less/memo-editor.less
+
+Author: boojack:	fix: remove duplicate tag (#450)
+server/tag.go
+
+Author: boojack:	chore: update version 0.7.2 (#447)
+server/version/version.go
+web/src/components/UpdateVersionBanner.tsx
+
+Author: boojack:	fix: editor resource list (#445)
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/Settings/SystemSection.tsx
+web/src/less/memo-editor.less
+web/src/less/memo-filter.less
+web/src/less/memo-resources.less
+web/src/services/locationService.ts
+
+Author: boojack:	fix: parse tag list (#446)
+server/metric_collector.go
+server/tag.go
+server/tag_test.go
+
+Author: boojack:	feat: additional style system setting (#444)
+api/system.go
+api/system_setting.go
+api/user_setting.go
+server/system.go
+web/src/App.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/Settings/SystemSection.tsx
+web/src/components/UserBanner.tsx
+web/src/less/editor.less
+web/src/services/userService.ts
+web/src/types/modules/setting.d.ts
+web/src/types/modules/system.d.ts
+
+Author: boojack:	feat: update visibility selector style (#441)
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/less/editor.less
+web/src/less/explore.less
+web/src/less/memo-editor.less
+
+Author: Zeng1998:	feat: add support for time-shortcut (#434)
+web/src/components/CreateShortcutDialog.tsx
+web/src/helpers/filter.ts
+web/src/less/create-shortcut-dialog.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/types/filter.d.ts
+
+Author: Zeng1998:	feat: select visibility in editor (#421)
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/helpers/storage.ts
+web/src/less/memo-editor.less
+web/src/services/editorStateService.ts
+web/src/store/modules/editor.ts
+
+Author: boojack:	chore: update session key (#440)
+server/acl.go
+
+Author: boojack:	fix: parser regexp for special character (#439)
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/Blockquote.ts
+web/src/labs/marked/parser/Bold.ts
+web/src/labs/marked/parser/BoldEmphasis.ts
+web/src/labs/marked/parser/DoneList.ts
+web/src/labs/marked/parser/Emphasis.ts
+web/src/labs/marked/parser/InlineCode.ts
+web/src/labs/marked/parser/Mark.ts
+web/src/labs/marked/parser/OrderedList.ts
+web/src/labs/marked/parser/Paragraph.ts
+web/src/labs/marked/parser/PlainText.ts
+web/src/labs/marked/parser/TodoList.ts
+web/src/labs/marked/parser/UnorderedList.ts
+
+Author: Yunliang Zhou:	fix: route confusion entering from non-home page (#430)
+web/src/services/locationService.ts
+
+Author: boojack:	chore: update seed data (#437)
+store/db/seed/10002__memo.sql
+
+Author: Zeng1998:	fix: share memo with resource list (#431)
+web/src/components/MemoResources.tsx
+web/src/components/ShareMemoImageDialog.tsx
+
+Author: Zeng1998:	chore: update MemoResources props (#432)
+web/src/components/ArchivedMemo.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoResources.tsx
+web/src/pages/Explore.tsx
+web/src/pages/MemoDetail.tsx
+
+Author: boojack:	feat: vacuum records manually (#420)
+api/memo.go
+api/memo_organizer.go
+api/memo_resource.go
+api/resource.go
+api/shortcut.go
+api/user_setting.go
+server/memo.go
+server/resource.go
+server/shortcut.go
+store/memo.go
+store/memo_organizer.go
+store/memo_resource.go
+store/resource.go
+store/shortcut.go
+store/store.go
+store/user.go
+store/user_setting.go
+
+Author: Zeng1998:	chore: update translation (#417)
+web/src/locales/zh.json
+
+Author: Zeng1998:	fix: delete related resources (#415)
+store/memo.go
+
+Author: Zeng1998:	chore: add icon for deleting resource (#414)
+web/src/components/ResourcesDialog.tsx
+web/src/less/resources-dialog.less
+
+Author: winwin2011:	chore: allow skip version (#411)
+web/src/components/UpdateVersionBanner.tsx
+web/src/helpers/storage.ts
+web/src/pages/Home.tsx
+
+Author: winwin2011:	fix: tag compressed (#412)
+web/src/less/memo-editor.less
+
+Author: boojack:	chore: update signin page (#410)
+server/version/version.go
+web/src/components/SettingDialog.tsx
+web/src/less/auth.less
+web/src/less/memo-editor.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/pages/Auth.tsx
+web/src/services/memoService.ts
+
+Author: boojack:	fix: tag regexp (#409)
+server/tag.go
+
+Author: boojack:	chore: enable `no-unused-vars` (#408)
+web/.eslintrc.json
+web/src/components/Settings/SystemSection.tsx
+
+Author: boojack:	feat: add system setting to allow user signup (#407)
+api/system.go
+api/system_setting.go
+bin/server/main.go
+plugin/metrics/segment/collector.go
+server/auth.go
+server/system.go
+store/db/seed/10005__system_setting.sql
+store/system_setting.go
+store/user.go
+web/package.json
+web/src/App.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/SystemSection.tsx
+web/src/helpers/api.ts
+web/src/less/auth.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/pages/Auth.tsx
+web/src/types/modules/system.d.ts
+web/yarn.lock
+
+Author: Zhou Yunliang:	feat: text filter regex support (#406)
+web/src/components/CreateShortcutDialog.tsx
+web/src/helpers/filter.ts
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: Mahoo Huang:	fix: abnormal blockquote regexp (#404)
+web/src/labs/marked/parser/Blockquote.ts
+
+Author: Zhou Yunliang:	feat: view all images of a memo (#393)
+web/src/components/Image.tsx
+web/src/components/Memo.tsx
+web/src/components/PreviewImageCarouselDialog.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/less/preview-image-carousel-dialog.less
+
+Author: Zhou Yunliang:	chore: update gitignore (#402)
+.gitignore
+
+Author: winwin2011:	chore: fold/expand i18n (#400)
+web/src/components/MemoContent.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: winwin2011:	chore: pin button color (#399)
+web/src/components/Memo.tsx
+
+Author: boojack:	chore: update corner width (#398)
+web/src/less/memo.less
+
+Author: boojack:	chore: update readme (#397)
+README.md
+
+Author: boojack:	chore: update pagination for getting all memos (#396)
+server/memo.go
+
+Author: boojack:	chore: update resource dialog style (#395)
+web/src/components/ResourcesDialog.tsx
+web/src/less/resources-dialog.less
+
+Author: boojack:	fix: heatmap data (#394)
+server/acl.go
+server/memo.go
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/api.ts
+web/src/less/usage-heat-map.less
+
+Author: boojack:	fix: session max age (#392)
+server/acl.go
+
+Author: boojack:	fix: memo list default value (#390)
+server/memo.go
+
+Author: Zeng1998:	feat: image preview enhancement (#385)
+web/src/components/Image.tsx
+web/src/components/MemoResources.tsx
+web/src/components/PreviewImageCarouselDialog.tsx
+web/src/less/preview-image-carousel-dialog.less
+
+Author: boojack:	feat: cache editing memo id (#388)
+web/src/components/ChangeMemoCreatedTsDialog.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/helpers/storage.ts
+web/src/services/memoService.ts
+
+Author: boojack:	chore: update memo stats api (#387)
+server/acl.go
+server/memo.go
+web/src/components/UsageHeatMap.tsx
+web/src/components/UserBanner.tsx
+web/src/helpers/api.ts
+web/src/services/userService.ts
+
+Author: boojack:	chore: update unpin memo (#386)
+web/src/components/Memo.tsx
+web/src/less/memo.less
+
+Author: Zeng1998:	feat: remove unused resources (#379)
+web/src/components/ResourcesDialog.tsx
+web/src/less/resources-dialog.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: Zeng1998:	feat: dialog content enhancement (#377)
+web/src/less/common-dialog.less
+
+Author: boojack:	chore: update readme (#375)
+README.md
+
+Author: boojack:	feat: unpin button in the corner (#374)
+web/src/components/Memo.tsx
+web/src/less/memo.less
+
+Author: boojack:	fix: get memo list order (#370)
+server/memo.go
+
+Author: boojack:	fix: resource table migration (#369)
+store/db/migration/prod/0.7/00__remove_fk.sql
+
+Author: boojack:	fix: missing column in resource table (#368)
+store/db/migration/prod/0.7/00__remove_fk.sql
+
+Author: boojack:	chore: release `v0.7.0` (#367)
+server/version/version.go
+
+Author: boojack:	feat: add blockquote regexp (#366)
+web/src/labs/marked/parser/Blockquote.ts
+web/src/labs/marked/parser/index.ts
+web/src/less/memo-content.less
+
+Author: boojack:	feat: add update version banner (#365)
+web/src/components/UpdateVersionBanner.tsx
+web/src/helpers/api.ts
+web/src/less/home.less
+web/src/pages/Home.tsx
+
+Author: boojack:	chore: update resource service (#364)
+web/src/components/ResourcesDialog.tsx
+web/src/services/resourceService.ts
+web/src/store/modules/resource.ts
+
+Author: Zeng1998:	feat: patch resource filename (#360)
+api/resource.go
+server/resource.go
+store/resource.go
+web/src/components/ChangeResourceFilenameDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/helpers/api.ts
+web/src/less/change-resource-filename-dialog.less
+web/src/less/resources-dialog.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/services/resourceService.ts
+web/src/store/index.ts
+web/src/store/modules/resource.ts
+web/src/types/modules/resource.d.ts
+
+Author: boojack:	feat: add metric plugin (#361)
+bin/server/main.go
+go.mod
+go.sum
+plugin/metrics/collector.go
+plugin/metrics/metric.go
+plugin/metrics/segment/collector.go
+server/auth.go
+server/memo.go
+server/metric_collector.go
+server/resource.go
+server/server.go
+server/shortcut.go
+server/user.go
+
+Author: Zeng1998:	fix: typo (#357)
+web/src/components/ResourcesDialog.tsx
+
+Author: Zeng1998:	feat: resource dialog enhancements (#356)
+web/src/components/ResourcesDialog.tsx
+web/src/less/resources-dialog.less
+
+Author: boojack:	chore: update memo list api (#350)
+common/util.go
+server/memo.go
+store/memo.go
+web/src/helpers/api.ts
+web/src/services/memoService.ts
+web/src/store/modules/memo.ts
+web/src/types/modules/memo.d.ts
+
+Author: boojack:	feat: case-insensitive search (#347)
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/helpers/filter.ts
+
+Author: boojack:	fix: fetch memo with filter (#346)
+web/src/components/MemoList.tsx
+web/src/store/modules/location.ts
+
+Author: boojack:	feat: remove foreign key and triggers (#345)
+api/shortcut.go
+api/user.go
+server/shortcut.go
+server/user.go
+server/version/version.go
+store/db/db.go
+store/db/migration/dev/LATEST__SCHEMA.sql
+store/db/migration/prod/0.7/00__remove_fk.sql
+store/db/migration/prod/0.7/01__remove_triggers.sql
+store/db/migration/prod/LATEST__SCHEMA.sql
+store/shortcut.go
+store/user.go
+
+Author: Zhou Yunliang:	feat: rss support (#343)
+go.mod
+go.sum
+server/rss.go
+server/server.go
+web/vite.config.ts
+
+Author: boojack:	chore: update insert content in editor (#336)
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+
+Author: Mahoo Huang:	feat: add some hotkeys (#320)
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+
+Author: Zeng1998:	chore: update the translation (#333)
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: boojack:	chore: release `v0.6.1` (#332)
+server/version/version.go
+
+Author: boojack:	fix: user setting name (#331)
+api/user_setting.go
+web/src/components/MemoList.tsx
+
+Author: boojack:	feat: pagination for memo list (#330)
+server/memo.go
+web/src/components/ArchivedMemo.tsx
+web/src/components/MemoList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/components/UserBanner.tsx
+web/src/helpers/api.ts
+web/src/less/memo-content.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/pages/Explore.tsx
+web/src/services/memoService.ts
+web/src/store/modules/memo.ts
+web/src/types/modules/memo.d.ts
+
+Author: Zeng1998:	fix: patch memo with resource list (#328)
+api/memo.go
+server/memo.go
+web/src/components/MemoEditor.tsx
+web/src/types/modules/memo.d.ts
+
+Author: boojack:	chore: update memo display time (#327)
+api/user_setting.go
+store/memo.go
+web/src/components/ArchivedMemo.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/DailyReviewDialog.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoList.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/consts.ts
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/pages/Explore.tsx
+web/src/pages/MemoDetail.tsx
+web/src/services/userService.ts
+web/src/types/modules/setting.d.ts
+
+Author: boojack:	feat: update memo sort option setting (#326)
+api/memo.go
+api/user_setting.go
+server/memo.go
+store/memo.go
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/services/locationService.ts
+web/src/services/memoService.ts
+web/src/store/modules/location.ts
+web/src/store/modules/memo.ts
+web/src/types/modules/memo.d.ts
+
+Author: boojack:	chore: update marked (#325)
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/Bold.ts
+web/src/labs/marked/parser/BoldEmphasis.ts
+web/src/labs/marked/parser/Emphasis.ts
+web/src/labs/marked/parser/Link.ts
+web/src/labs/marked/parser/index.ts
+
+Author: boojack:	fix: bold and emphasis regex (#323)
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/Bold.ts
+web/src/labs/marked/parser/Emphasis.ts
+
+Author: winwin2011:	chore: update i18n in settings (#324)
+web/src/locales/zh.json
+
+Author: winwin2011:	feat: inline code within link (#321)
+web/src/labs/marked/index.ts
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/Link.ts
+web/src/less/memo-content.less
+
+Author: boojack:	chore: update demo seeding data (#318)
+store/db/seed/10002__memo.sql
+store/db/seed/10003__memo_organizer.sql
+web/src/less/memo-content.less
+
+Author: Zeng1998:	feat: customize memo list sorting rules (#312)
+.gitignore
+api/user_setting.go
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/helpers/consts.ts
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/services/locationService.ts
+web/src/services/userService.ts
+web/src/store/modules/location.ts
+web/src/types/modules/setting.d.ts
+
+Author: f97:	feat: editor tab support (#309)
+web/src/components/MemoEditor.tsx
+web/src/helpers/consts.ts
+
+Author: boojack:	chore: update bug report template (#316)
+.github/ISSUE_TEMPLATE/bug_report.yml
+
+Author: boojack:	chore: add issue template (#314)
+.github/ISSUE_TEMPLATE/bug_report.yml
+.github/ISSUE_TEMPLATE/feature_request.yml
+
+Author: boojack:	fix: memo list auto scroll to top (#313)
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoList.tsx
+
+Author: boojack:	chore: update mask animation styles (#306)
+web/src/less/siderbar.less
+
+Author: Tiger:	chore: update `zh.json` (#304)
+web/src/locales/zh.json
+
+Author: boojack:	fix: close button z-index in setting dialog (#303)
+web/src/less/setting-dialog.less
+
+Author: Steven:	chore: update marked tests
+web/src/labs/marked/marked.test.ts
+
+Author: Hyoban:	fix: blank line after table (#298)
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/Table.ts
+
+Author: Hyoban:	docs: update docker-compose tip (#299)
+README.md
+
+Author: Hyoban:	docs: docker compose tip (#296)
+README.md
+
+Author: Hyoban:	feat: support markdown table (#294)
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/Table.ts
+web/src/labs/marked/parser/index.ts
+web/src/less/memo-content.less
+
+Author: Steven:	chore: restore user email
+server/system.go
+server/user.go
+
+Author: Steven:	fix: handle highlight unknown language error
+web/src/labs/marked/parser/CodeBlock.ts
+
+Author: Steven:	chore: release `v0.6.0`
+server/version/version.go
+
+Author: Steven:	chore: reorder memo resource
+store/memo_resource.go
+store/resource.go
+
+Author: Steven:	chore: update dev version
+server/version/version.go
+store/db/migration/prod/0.6/00__recreate_triggers.sql
+
+Author: boojack:	feat: upload files by dropping (#292)
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/labs/marked/parser/Tag.ts
+web/src/less/memo-resources.less
+web/src/less/siderbar.less
+
+Author: boojack:	feat: add highlight for code block (#291)
+web/package.json
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/CodeBlock.ts
+web/src/less/memo-content.less
+web/src/main.tsx
+web/yarn.lock
+
+Author: Hyoban:	fix: can not click sidebar (#289)
+web/src/components/Sidebar.tsx
+
+Author: Hyoban:	feat: handle esc keyboard event for editor (#288)
+web/src/components/MemoEditor.tsx
+
+Author: boojack:	feat: update sidebar mask styles (#287)
+web/src/components/MemosHeader.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/helpers/utils.ts
+web/src/less/shortcut-list.less
+web/src/less/siderbar.less
+web/tailwind.config.js
+
+Author: h2o2o:	chore: update sidebar styles in mobile view (#285)
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/helpers/utils.ts
+web/src/less/siderbar.less
+web/tailwind.config.js
+
+Author: boojack:	fix: create memo with visibility (#281)
+server/memo.go
+
+Author: boojack:	chore: hide user email (#282)
+server/system.go
+server/user.go
+store/user.go
+
+Author: Steven:	fix: create triggers after dropping old tables
+store/db/migration/prod/0.5/00__regenerate_foreign_keys.sql
+
+Author: Steven:	chore: revert sidebar updates
+web/src/components/MemoList.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/TagList.tsx
+web/src/helpers/utils.ts
+web/src/less/siderbar.less
+
+Author: zburu:	chore: adjust sidebar style (#277)
+web/src/less/siderbar.less
+
+Author: h2o2o:	添加移动端点击自动关闭侧边栏 (#271)
+web/src/components/MemoList.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/TagList.tsx
+web/src/helpers/utils.ts
+
+Author: f97:	fix: i18n for filter (#275)
+web/src/components/MemoFilter.tsx
+web/src/components/SearchBar.tsx
+web/src/locales/vi.json
+
+Author: Steven:	chore: update i18n for filter
+web/src/components/CreateShortcutDialog.tsx
+web/src/helpers/filter.ts
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: winwin2011:	chore: update i18n for shortcut filter (#270)
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/Dialog/CommonDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/helpers/filter.ts
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: steven:	chore: update copy button style
+web/src/less/memo-detail.less
+web/src/pages/MemoDetail.tsx
+
+Author: f97:	feat: add copy button to memo (#267)
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/less/memo-detail.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/pages/MemoDetail.tsx
+
+Author: boojack:	fix: tag filter (#266)
+web/src/components/MemoList.tsx
+
+Author: steven:	chore: update header style
+web/src/less/usage-heat-map.less
+web/src/less/user-banner.less
+
+Author: f97:	chore: update vietnamese i18n (#261)
+web/src/locales/vi.json
+
+Author: steven:	fix: update marked test cases
+web/jest.config.js
+web/package.json
+web/src/components/Memo.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/helpers/utils.ts
+web/src/labs/marked/index.ts
+web/src/labs/marked/marked.test.ts
+web/src/services/userService.ts
+web/yarn.lock
+
+Author: steven:	feat: add `escape` to renderer
+web/src/labs/marked/parser/CodeBlock.ts
+web/src/labs/marked/parser/Image.ts
+web/src/labs/marked/parser/InlineCode.ts
+web/src/labs/marked/parser/Link.ts
+web/src/labs/marked/parser/Mark.ts
+web/src/labs/marked/parser/PlainLink.ts
+web/src/labs/marked/parser/PlainText.ts
+web/src/labs/marked/parser/Tag.ts
+web/src/labs/marked/parser/TodoList.ts
+web/src/labs/marked/parser/UnorderedList.ts
+web/src/labs/marked/parser/index.ts
+
+Author: steven:	chore: update migration sql file
+store/db/migration/prod/0.5/00__regenerate_foreign_keys.sql
+
+Author: steven:	chore: update `VACUUM`
+store/db/migration/prod/0.5/00__regenerate_foreign_keys.sql
+store/resource.go
+
+Author: boojack:	feat: update marked parsers (#260)
+web/src/labs/marked/index.ts
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/Bold.ts
+web/src/labs/marked/parser/CodeBlock.ts
+web/src/labs/marked/parser/DoneList.ts
+web/src/labs/marked/parser/Emphasis.ts
+web/src/labs/marked/parser/Image.ts
+web/src/labs/marked/parser/InlineCode.ts
+web/src/labs/marked/parser/Link.ts
+web/src/labs/marked/parser/Mark.ts
+web/src/labs/marked/parser/OrderedList.ts
+web/src/labs/marked/parser/Paragraph.ts
+web/src/labs/marked/parser/PlainLink.ts
+web/src/labs/marked/parser/Tag.ts
+web/src/labs/marked/parser/TodoList.ts
+web/src/labs/marked/parser/UnorderedList.ts
+web/src/labs/marked/parser/index.ts
+web/src/less/memo-content.less
+
+Author: boojack:	fix: tag selector position (#259)
+web/src/less/memo-editor.less
+
+Author: steven:	feat: add `inline-code` syntax parser
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/InlineCode.ts
+web/src/labs/marked/parser/index.ts
+web/src/less/memo-content.less
+
+Author: steven:	chore: add `FUNDING.yml`
+.github/FUNDING.yml
+
+Author: steven:	chore: release version `0.5.0`
+server/version/version.go
+
+Author: steven:	chore: update user banner style
+web/src/components/UserBanner.tsx
+
+Author: steven:	fix: re-generate table columns foreign keys
+store/db/db.go
+store/db/migration/dev/LATEST__SCHEMA.sql
+store/db/migration/prod/0.2/01__memo_visibility.sql
+store/db/migration/prod/0.5/00__regenerate_foreign_keys.sql
+store/db/migration/prod/0.5/01__memo_resource.sql
+store/db/migration/prod/0.5/02__system_setting.sql
+store/db/migration/prod/0.5/03__resource_extermal_link.sql
+store/db/migration/prod/LATEST__SCHEMA.sql
+
+Author: steven:	chore: update resource dialog
+web/src/components/MemoEditor.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/UserBanner.tsx
+web/src/less/memo-editor.less
+web/src/types/modules/resource.d.ts
+
+Author: steven:	feat: add `linkedMemoAmount` to resource
+api/resource.go
+server/resource.go
+store/resource.go
+
+Author: steven:	fix: emoji picker style
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/less/memo-content.less
+web/src/less/memo-editor.less
+web/src/less/memo-list.less
+
+Author: steven:	chore: don't clean data in dev mode
+store/db/db.go
+
+Author: boojack:	fix: tag regexp (#253)
+server/tag.go
+web/src/labs/marked/parser/Tag.ts
+web/src/labs/marked/parser/index.ts
+
+Author: boojack:	feat: simple markdown parser (#252)
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoContent.tsx
+web/src/components/MemoList.tsx
+web/src/helpers/filter.ts
+web/src/helpers/marked.ts
+web/src/helpers/utils.ts
+web/src/labs/marked/index.ts
+web/src/labs/marked/marked.test.ts
+web/src/labs/marked/parser/Bold.ts
+web/src/labs/marked/parser/CodeBlock.ts
+web/src/labs/marked/parser/DoneList.ts
+web/src/labs/marked/parser/Emphasis.ts
+web/src/labs/marked/parser/Image.ts
+web/src/labs/marked/parser/Link.ts
+web/src/labs/marked/parser/Mark.ts
+web/src/labs/marked/parser/OrderedList.ts
+web/src/labs/marked/parser/Paragraph.ts
+web/src/labs/marked/parser/PlainLink.ts
+web/src/labs/marked/parser/Tag.ts
+web/src/labs/marked/parser/TodoList.ts
+web/src/labs/marked/parser/UnorderedList.ts
+web/src/labs/marked/parser/index.ts
+web/src/less/daily-memo.less
+web/src/less/memo-content.less
+
+Author: steven:	chore: update interval flag type
+web/src/components/Memo.tsx
+
+Author: steven:	chore: add `--passWithNoTests` to jest
+web/package.json
+
+Author: steven:	chore: add jest github action
+.github/workflows/tests.yml
+
+Author: steven:	chore: add `jest`
+web/jest.config.js
+web/package.json
+web/yarn.lock
+
+Author: steven:	chore: update inline image
+web/src/components/DailyMemo.tsx
+web/src/components/MemoContent.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/helpers/marked.ts
+web/src/less/memo.less
+
+Author: steven:	chore: regenerate `yarn.lock`
+web/yarn.lock
+
+Author: steven:	feat: create memo with resourceIdList
+api/memo.go
+server/memo.go
+store/memo.go
+web/src/components/MemoEditor.tsx
+web/src/services/memoService.ts
+web/src/types/modules/memo.d.ts
+
+Author: steven:	fix: raw data cache
+store/memo.go
+store/memo_resource.go
+store/resource.go
+store/shortcut.go
+store/user.go
+
+Author: steven:	feat: update memo resource component
+web/src/components/DailyMemo.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoResources.tsx
+web/src/less/daily-memo.less
+web/src/less/memo-resources.less
+web/src/types/modules/memo.d.ts
+
+Author: steven:	feat: compose memo resource list
+api/memo.go
+store/memo.go
+store/memo_resource.go
+
+Author: steven:	feat: update memo editor with uploading resources
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/helpers/api.ts
+web/src/less/editor.less
+web/src/less/memo-editor.less
+web/src/services/memoService.ts
+
+Author: steven:	chore: update react version
+web/package.json
+web/yarn.lock
+
+Author: steven:	fix: delete memo resource
+server/memo.go
+store/memo_resource.go
+
+Author: steven:	feat: add memo resource apis
+api/resource.go
+server/memo.go
+store/memo.go
+store/resource.go
+
+Author: steven:	chore: update dev version `v0.5.0`
+server/version/version.go
+
+Author: steven:	feat: add `memo_resource` model
+api/memo_resource.go
+store/db/migration/dev/LATEST__SCHEMA.sql
+store/memo_resource.go
+
+Author: boojack:	fix: emoji picker position in fullscreen (#251)
+web/src/less/memo-editor.less
+
+Author: boojack:	fix: mobile editor float style (#247)
+web/src/less/memo-editor.less
+
+Author: boojack:	chore: update emoji picker toggle logic (#244)
+web/src/components/Editor/EmojiPicker.tsx
+web/src/components/MemoEditor.tsx
+
+Author: Steven:	chore: update dropdown action button style
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/TagList.tsx
+
+Author: Steven:	chore: remove `vite-plugin-pwa`
+web/package.json
+web/vite.config.ts
+web/yarn.lock
+
+Author: Steven:	chore: update memo detail header
+web/src/pages/MemoDetail.tsx
+
+Author: Steven:	chore: release `v0.4.5`
+server/version/version.go
+web/package.json
+
+Author: Steven:	fix: api access checks
+server/memo.go
+
+Author: Steven:	chore: update memo detail page
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/less/memo-detail.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/pages/MemoDetail.tsx
+
+Author: Steven:	chore: update router
+web/src/pages/Explore.tsx
+web/src/pages/Home.tsx
+web/src/pages/MemoDetail.tsx
+web/src/router/index.tsx
+web/src/store/index.ts
+
+Author: Steven:	feat: update dev latest schema
+store/db/migration/dev/LATEST__SCHEMA.sql
+
+Author: Steven:	chore: update memo detail access handler
+server/acl.go
+server/memo.go
+web/src/components/MemoCardDialog.tsx
+web/src/components/Toast.tsx
+web/src/pages/MemoDetail.tsx
+
+Author: f97:	chore: support html form (#236)
+web/src/pages/Auth.tsx
+
+Author: Steven:	chore: use conditional rendering instead of OnlyWhen
+web/src/components/AboutSiteDialog.tsx
+web/src/components/Editor/Editor.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemoResources.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UserBanner.tsx
+web/src/components/common/OnlyWhen.tsx
+web/src/pages/Auth.tsx
+web/src/pages/Explore.tsx
+web/src/pages/Home.tsx
+web/src/pages/MemoDetail.tsx
+
+Author: Steven:	chore: add memo detail page
+web/src/components/MemoCardDialog.tsx
+web/src/helpers/api.ts
+web/src/pages/Explore.tsx
+web/src/pages/MemoDetail.tsx
+web/src/router/index.tsx
+web/src/services/memoService.ts
+
+Author: Steven:	chore: update dropdown component
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/UserBanner.tsx
+web/src/components/common/Dropdown.tsx
+web/src/less/common/dropdown.less
+web/src/less/menu-btns-popup.less
+web/src/less/resources-dialog.less
+web/src/less/settings/member-section.less
+
+Author: f97:	feat: float mobile editor (#234)
+api/user_setting.go
+web/src/components/MemoEditor.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/less/memo-editor.less
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/services/userService.ts
+web/src/types/modules/setting.d.ts
+
+Author: boojack:	chore: update i18n for memo visibility (#233)
+web/src/components/MemoCardDialog.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: Steven:	chore: fix memo content click handler
+web/src/components/ArchivedMemo.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoContent.tsx
+web/src/less/memo-content.less
+
+Author: Steven:	feat: use `i18next`
+web/package.json
+web/src/App.tsx
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ArchivedMemo.tsx
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ChangeMemoCreatedTsDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/DailyReviewDialog.tsx
+web/src/components/Editor/Editor.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/SearchBar.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UserBanner.tsx
+web/src/components/common/Selector.tsx
+web/src/hooks/useI18n.ts
+web/src/i18n.ts
+web/src/labs/i18n/I18nProvider.tsx
+web/src/labs/i18n/createI18nStore.tsx
+web/src/labs/i18n/i18nStore.ts
+web/src/labs/i18n/useI18n.ts
+web/src/main.tsx
+web/src/pages/Auth.tsx
+web/src/pages/Explore.tsx
+web/src/pages/Home.tsx
+web/yarn.lock
+
+Author: Steven:	feat: use `react-router`
+web/src/App.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/Sidebar.tsx
+web/src/helpers/utils.ts
+web/src/less/explore.less
+web/src/main.tsx
+web/src/pages/Auth.tsx
+web/src/pages/Explore.tsx
+web/src/pages/Home.tsx
+web/src/router/index.tsx
+web/src/routers/appRouter.tsx
+web/src/routers/index.ts
+
+Author: Steven:	fix: add `_foreign_keys` to sqlite dsn
+store/db/db.go
+store/memo.go
+store/resource.go
+store/shortcut.go
+store/user.go
+
+Author: boojack:	chore: add `vite-plugin-pwa` (#230)
+web/package.json
+web/vite.config.ts
+web/yarn.lock
+
+Author: f97:	chore: fix i18n vietnamese typos and update MemoCardDialog (#228)
+web/src/components/MemoCardDialog.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: Steven:	chore: update i18n for change password dialog
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: boojack:	chore: hide the searchbar of emoji picker (#222)
+web/src/components/Editor/EmojiPicker.tsx
+web/src/components/MemoEditor.tsx
+
+Author: f97:	feat: add emoji picker in editor (#221)
+web/index.html
+web/package.json
+web/src/components/Editor/EmojiPicker.tsx
+web/src/components/MemoEditor.tsx
+web/src/less/memo-editor.less
+web/yarn.lock
+
+Author: Steven:	chore: fix docker tag
+.github/workflows/build-and-push-release-image.yml
+
+Author: Steven:	chore: fix build tag
+.github/workflows/build-and-push-release-image.yml
+
+Author: Steven:	chore: update `v0.4.4`
+.github/workflows/build-and-push-release-image.yml
+quickstart/docker-compose.yaml
+server/version/version.go
+web/package.json
+
+Author: Steven:	chore: add no data tip
+web/src/pages/Explore.tsx
+
+Author: Steven:	chore: add copy non-private memo link
+web/src/components/MemoCardDialog.tsx
+
+Author: Steven:	chore: add `react-router`
+web/package.json
+web/src/hooks/useQuery.ts
+web/src/main.tsx
+web/src/pages/Explore.tsx
+web/yarn.lock
+
+Author: Steven:	chore: remove language beta badge
+web/src/components/ResourcesDialog.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/less/resources-dialog.less
+
+Author: f97:	chore: update i18n for UserBanner (#219)
+web/src/components/UserBanner.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+
+Author: Steven:	chore: update dev version
+server/acl.go
+server/version/version.go
+
+Author: Steven:	chore: fix `manifest.json` image
+web/public/manifest.json
+
+Author: Steven:	chore: update i18n structures
+web/src/components/ArchivedMemo.tsx
+web/src/components/ChangeMemoCreatedTsDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoList.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/locales/en.json
+web/src/locales/vi.json
+web/src/locales/zh.json
+web/src/pages/Auth.tsx
+web/src/pages/Home.tsx
+
+Author: f97:	feat: add vietnamese (#218)
+api/user_setting.go
+web/src/components/Settings/PreferencesSection.tsx
+web/src/labs/i18n/useI18n.ts
+web/src/locales/vi.json
+web/src/pages/Auth.tsx
+web/src/types/i18n.d.ts
+
+Author: ChasLui:	chore: update i18n (#215)
+web/src/components/ArchivedMemo.tsx
+web/src/components/ChangeMemoCreatedTsDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/pages/Auth.tsx
+web/src/pages/Home.tsx
+
+Author: Steven:	chore: update common locales
+web/src/components/ArchivedMemo.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/SearchBar.tsx
+web/src/labs/i18n/useI18n.ts
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: boojack:	chore: fix copy to clipboard (#214)
+web/package.json
+web/src/components/ResourcesDialog.tsx
+web/src/components/TagList.tsx
+web/src/helpers/utils.ts
+web/yarn.lock
+
+Author: ChasLui:	chore: update i18n (#212)
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/SearchBar.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/TagList.tsx
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: Steven:	chore: move `version` pkg to `server/version`
+server/profile/profile.go
+server/version/version.go
+store/db/db.go
+
+Author: boojack:	chore: vacuum db file after deleting resource (#210)
+store/resource.go
+
+Author: Steven:	feat: add `MemoContent` component
+web/src/components/ArchivedMemo.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoContent.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/helpers/marked.ts
+web/src/less/daily-memo.less
+web/src/less/explore.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo-content.less
+web/src/less/share-memo-image-dialog.less
+web/src/pages/Explore.tsx
+
+Author: winwin2011:	feat: i18n for dialogs (#203)
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/DailyReviewDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: boojack:	chore: update username validate config (#209)
+web/src/components/Settings/MyAccountSection.tsx
+
+Author: Steven:	chore: release `v0.4.3`
+common/version.go
+server/acl.go
+server/auth.go
+server/system.go
+store/db/db.go
+web/package.json
+
+Author: boojack:	chore: support double-click to edit memo (#207)
+web/src/components/Memo.tsx
+
+Author: Steven:	chore: update explore page style
+web/src/pages/Explore.tsx
+
+Author: Steven:	chore: update loading section
+web/src/pages/Explore.tsx
+
+Author: Steven:	chore: support upload more file type
+web/src/components/ResourcesDialog.tsx
+
+Author: Steven:	chore: add memo resources component
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoResources.tsx
+web/src/components/Sidebar.tsx
+web/src/less/memo-card-dialog.less
+web/src/less/memo-editor.less
+web/src/less/memo-resources.less
+web/src/less/memo.less
+web/src/pages/Explore.tsx
+
+Author: Steven:	chore: update resource base url
+server/server.go
+web/src/components/MemoEditor.tsx
+web/src/components/ResourcesDialog.tsx
+web/vite.config.ts
+
+Author: Steven:	chore: add cache for resource
+go.mod
+go.sum
+server/embed_frontend.go
+server/resource.go
+server/server.go
+server/webhook.go
+
+Author: Steven:	chore: update explore style
+web/src/less/explore.less
+
+Author: Steven:	chore: update docs
+README.md
+docs/development.md
+
+Author: boojack:	chore: update button entries (#206)
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/Sidebar.tsx
+web/src/less/explore.less
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/pages/Explore.tsx
+
+Author: boojack:	feat: add explore page (#205)
+server/memo.go
+web/src/components/ArchivedMemo.tsx
+web/src/components/MemoContent.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/helpers/api.ts
+web/src/less/explore.less
+web/src/pages/Explore.tsx
+web/src/pages/Home.tsx
+web/src/routers/appRouter.tsx
+web/src/services/memoService.ts
+web/src/store/modules/location.ts
+web/src/types/modules/memo.d.ts
+
+Author: winwin2011:	fix: upload resouces double time (#204)
+web/src/components/ResourcesDialog.tsx
+
+Author: Steven:	chore: add get all memo api
+api/memo.go
+bin/server/cmd/root.go
+bin/server/main.go
+server/acl.go
+server/memo.go
+store/memo.go
+store/user.go
+
+Author: Steven:	chore: fix tag regex
+server/tag.go
+web/src/helpers/marked.ts
+
+Author: winwin2011:	fix: heatmap popover blink (#195)
+web/src/components/UsageHeatMap.tsx
+web/src/less/usage-heat-map.less
+
+Author: Steven:	chore: update eslint rules
+web/.eslintrc.json
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/GitHubBadge.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/SearchBar.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/Toast.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/components/UserBanner.tsx
+web/src/helpers/consts.ts
+web/src/less/shortcut-list.less
+web/src/less/toast.less
+web/src/pages/Auth.tsx
+
+Author: Steven:	chore: update not found handler in deleting
+server/memo.go
+server/resource.go
+server/shortcut.go
+server/user.go
+store/memo.go
+store/resource.go
+store/shortcut.go
+store/user.go
+
+Author: Steven:	chore: update readme
+README.md
+docker-compose.yaml
+
+Author: Steven:	chore: update resources
+resources/logo-full.webp
+web/public/logo-full.webp
+
+Author: Steven:	fix: upload image in iOS safari
+web/src/components/MemoEditor.tsx
+web/src/components/ResourcesDialog.tsx
+
+Author: Steven:	chore: release `v0.4.2`
+common/version.go
+web/package.json
+
+Author: Steven:	chore: fix daily memo style
+web/src/less/daily-memo.less
+
+Author: Steven:	chore: update about dialog
+web/src/components/AboutSiteDialog.tsx
+web/src/less/about-site-dialog.less
+
+Author: boojack:	chore: support uploads multi files (#191)
+web/src/components/MemoEditor.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/less/resources-dialog.less
+
+Author: Steven:	chore: update marked helper
+resources/logo-full.webp
+resources/logo.webp
+web/public/logo-full.webp
+web/public/logo.webp
+web/src/components/ArchivedMemo.tsx
+web/src/components/Editor/Editor.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/common/DatePicker.tsx
+web/src/helpers/consts.ts
+web/src/helpers/filter.ts
+web/src/helpers/marked.ts
+web/src/less/auth.less
+web/src/less/memo-editor.less
+
+Author: boojack:	fix: find latest migration history (#190)
+store/db/migration_history.go
+web/src/pages/Auth.tsx
+
+Author: Steven:	chore: update resources file format
+README.md
+resources/logo-full.png
+resources/logo-full.webp
+resources/logo.png
+resources/logo.webp
+web/index.html
+web/public/logo-full.png
+web/public/logo-full.webp
+web/public/logo.png
+web/public/logo.webp
+web/public/manifest.json
+web/src/pages/Auth.tsx
+
+Author: boojack:	chore: update readme
+README.md
+
+Author: Steven:	chore: update logo resources
+resources/logo-full.png
+resources/logo.png
+web/public/favicon.svg
+web/public/logo-full.png
+web/public/logo.png
+web/src/less/auth.less
+web/src/pages/Auth.tsx
+
+Author: boojack:	fix: create shortcut input (#186)
+.github/workflows/tests.yml
+web/src/components/CreateShortcutDialog.tsx
+web/src/less/create-shortcut-dialog.less
+
+Author: boojack:	chore: add eslint check in action (#185)
+.github/workflows/tests.yml
+
+Author: Steven:	chore: update dialog event listener
+common/version.go
+web/src/components/Dialog/BaseDialog.tsx
+web/src/components/Memo.tsx
+web/src/components/PreviewImageDialog.tsx
+
+Author: zburu:	chore: update mobile style (#181)
+web/src/less/home.less
+
+Author: TheNexter:	Simple docker-compose.yml (#179)
+README.md
+docker-compose.yml
+
+Author: steven:	fix: update `isFetching` default value
+web/src/store/modules/memo.ts
+
+Author: steven:	chore: update version `v0.4.1`
+common/version.go
+web/package.json
+
+Author: steven:	chore: update detail styles
+web/src/App.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/less/auth.less
+web/src/less/beta-badge.less
+web/src/less/common/selector.less
+web/src/less/memo-list.less
+web/src/less/setting-dialog.less
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/services/memoService.ts
+web/src/store/modules/memo.ts
+
+Author: steven:	chore: update build folder
+.gitignore
+scripts/.air.toml
+scripts/build.sh
+
+Author: Steven:	chore: update tag regexp
+server/tag.go
+web/src/helpers/consts.ts
+
+Author: Steven:	feat: allow updating memo `createdTs`
+api/memo.go
+store/memo.go
+web/src/components/ChangeMemoCreatedTsDialog.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoList.tsx
+web/src/helpers/utils.ts
+web/src/less/change-memo-created-ts-dialog.less
+web/src/less/change-password-dialog.less
+web/src/types/modules/memo.d.ts
+
+Author: Steven:	chore: update selector style
+web/src/components/MemoEditor.tsx
+web/src/components/common/Selector.tsx
+web/src/less/common/selector.less
+web/src/less/memo-editor.less
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: boojack:	feat: set editor font style (#174)
+api/user_setting.go
+web/src/components/MemoEditor.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/less/editor.less
+web/src/less/setting-dialog.less
+web/src/less/settings/preferences-section.less
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/services/userService.ts
+web/src/types/modules/setting.d.ts
+
+Author: Steven:	chore: update config files
+.github/workflows/tests.yml
+.vscode/settings.json
+
+Author: Steven:	chore: update seed data
+store/db/seed/10004__shortcut.sql
+
+Author: boojack:	fix: tag regexp (#173)
+server/tag.go
+
+Author: Steven:	chore: update i18n
+web/src/less/home.less
+web/src/less/memo-editor.less
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: Steven:	fix: overflow style
+web/src/less/memo.less
+
+Author: Steven:	fix: text overflow style
+web/src/less/daily-memo.less
+web/src/less/home.less
+web/src/less/memo.less
+
+Author: boojack:	chore: update golangci-lint config (#168)
+.golangci.yaml
+
+Author: Steven:	chore: make `golangci-lint` happy
+.github/workflows/tests.yml
+.golangci.yaml
+api/user_setting.go
+bin/server/cmd/root.go
+bin/server/main.go
+common/error.go
+server/profile/profile.go
+server/tag.go
+store/db/db.go
+store/db/migration_history.go
+store/memo_organizer.go
+store/store.go
+store/user.go
+store/user_setting.go
+
+Author: Steven:	chore: add `golangci-lint` action
+.github/workflows/codeql.yml
+.github/workflows/tests.yml
+
+Author: Steven:	chore: make `golangci-lint` happy
+store/db/db.go
+store/db/table.go
+
+Author: boojack:	chore: update `word-break` style (#164)
+web/src/less/global.less
+web/src/less/memo-content.less
+web/src/less/toast.less
+
+Author: Steven:	chore: update cancel editing button
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/less/memo-editor.less
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: Lim Ding Wen:	fix: Fix Typo (Editting -> Editing) (#161)
+web/src/components/MemoEditor.tsx
+
+Author: Steven:	chore: update readme
+README.md
+
+Author: Steven:	chore: set default flags in dockerfile
+Dockerfile
+
+Author: boojack:	fix: unescape filename (#158)
+server/webhook.go
+
+Author: Steven:	fix: generate uuid when creating new user
+server/user.go
+
+Author: Steven:	chore: update user setting validator
+api/user_setting.go
+server/memo.go
+server/user.go
+
+Author: Steven:	chore: disable setting memo visibility when creating
+api/memo.go
+server/memo.go
+store/memo.go
+web/src/types/modules/memo.d.ts
+
+Author: Steven:	chore: update user create validator
+api/user.go
+common/error.go
+common/util.go
+common/util_test.go
+server/auth.go
+server/user.go
+
+Author: Steven:	chore: update create tag tip style
+web/src/components/TagList.tsx
+web/src/less/tag-list.less
+
+Author: Steven:	chore: update version `0.4.0`
+common/version.go
+
+Author: Steven:	chore: update i18n
+web/src/components/Memo.tsx
+web/src/less/tag-list.less
+web/src/locales/en.json
+web/src/locales/zh.json
+
+Author: Steven:	chore: update prod schema
+server/resource.go
+store/db/migration/prod/LATEST__SCHEMA.sql
+
+Author: Steven:	chore: update error message handler
+web/src/components/ArchivedMemo.tsx
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/pages/Auth.tsx
+
+Author: Steven:	chore: update i18n dialog
+web/src/components/DailyReviewDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/locales/zh.json
+
+Author: Steven:	chore: add beta badge
+web/src/components/BetaBadge.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/less/beta-badge.less
+web/src/less/settings/preferences-section.less
+
+Author: Steven:	chore: set default memo visibility
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/helpers/consts.ts
+web/src/labs/i18n/useI18n.ts
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/services/userService.ts
+web/src/types/modules/setting.d.ts
+
+Author: Steven:	chore: update user setting keys
+api/user_setting.go
+server/memo.go
+
+Author: Steven:	chore: update i18n
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ArchivedMemo.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/Editor/Editor.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/less/about-site-dialog.less
+web/src/less/tag-list.less
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/pages/Auth.tsx
+web/src/pages/Home.tsx
+
+Author: Steven:	chore: update logger
+bin/server/cmd/root.go
+server/server.go
+
+Author: Steven:	chore: add memo visibility with user setting
+api/user_setting.go
+server/memo.go
+store/user_setting.go
+
+Author: Steven:	chore: fix lint
+web/src/labs/i18n/createI18nStore.tsx
+
+Author: Steven:	chore: update i18n for auth page
+web/src/components/GitHubBadge.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/less/auth.less
+web/src/less/github-badge.less
+web/src/less/signin.less
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/pages/Auth.tsx
+web/src/pages/Home.tsx
+web/src/routers/appRouter.tsx
+web/src/store/modules/location.ts
+
+Author: Steven:	chore: update scripts
+scripts/build.sh
+scripts/start.sh
+
+Author: Steven:	chore: update `.gitignore`
+.gitignore
+
+Author: Steven:	chore: go mod tidy
+go.sum
+
+Author: boojack:	feat: add `user_setting` model (#145)
+api/user.go
+api/user_setting.go
+quickstart/docker-compose.yaml
+server/user.go
+store/db/migration/dev/LATEST__SCHEMA.sql
+store/db/migration/prod/0.4/00__user_setting.sql
+store/user_setting.go
+web/src/App.tsx
+web/src/components/AboutSiteDialog.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/common/Selector.tsx
+web/src/helpers/api.ts
+web/src/helpers/storage.ts
+web/src/labs/i18n/useI18n.ts
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/pages/Signin.tsx
+web/src/services/globalService.ts
+web/src/services/index.ts
+web/src/services/userService.ts
+web/src/store/index.ts
+web/src/store/modules/global.ts
+web/src/types/i18n.d.ts
+web/src/types/modules/setting.d.ts
+web/src/types/modules/user.d.ts
+
+Author: XQ:	feat: add `manifest.json` for pwa (#144)
+web/index.html
+web/public/manifest.json
+web/public/sw.js
+
+Author: leopold:	chore: add docker-compose.yaml (#142)
+docker-compose.yaml
+
+Author: XQ:	chore: update `i18nStore` (#141)
+web/src/labs/html2image/getFontsStyleElement.ts
+web/src/labs/i18n/createI18nStore.tsx
+web/src/labs/i18n/i18nStore.ts
+web/src/labs/i18n/useI18n.ts
+
+Author: XQ:	chore: code clean (#140)
+web/src/components/MemoCardDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/SearchBar.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/Sidebar.tsx
+
+Author: XQ:	chore: remove `useAppContext` in dialog props
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/DailyReviewDialog.tsx
+web/src/components/Dialog/BaseDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/SettingDialog.tsx
+
+Author: boojack:	chore: remove test action
+.github/workflows/build-and-push-test-image.yml
+
+Author: boojack:	chore: add `i18n` based with `useContext`
+web/src/components/AboutSiteDialog.tsx
+web/src/hooks/useDebounce.ts
+web/src/hooks/useI18n.ts
+web/src/hooks/useLoading.ts
+web/src/hooks/useRefresh.ts
+web/src/hooks/useToggle.ts
+web/src/labs/i18n/I18nProvider.tsx
+web/src/labs/i18n/i18nStore.ts
+web/src/labs/i18n/useI18n.ts
+web/src/locales/en.json
+web/src/locales/zh.json
+web/src/main.tsx
+web/src/services/resourceService.ts
+web/src/store/index.ts
+
+Author: boojack:	chore: use `transaction` for migration history
+bin/server/cmd/root.go
+store/db/db.go
+store/db/migration_history.go
+store/db/table.go
+
+Author: boojack:	chore: use `tx` for stores
+server/memo.go
+server/resource.go
+server/shortcut.go
+server/tag.go
+server/webhook.go
+store/memo.go
+store/memo_organizer.go
+store/resource.go
+store/shortcut.go
+
+Author: boojack:	chore: use `tx` for user store
+api/auth.go
+server/acl.go
+server/auth.go
+server/system.go
+server/user.go
+store/user.go
+
+Author: boojack:	chore: add store cache service
+api/cache.go
+go.mod
+go.sum
+store/cache.go
+store/memo.go
+store/resource.go
+store/shortcut.go
+store/store.go
+store/user.go
+
+Author: boojack:	chore: hide resource `blob` field
+api/resource.go
+
+Author: boojack:	chore: release `v0.3.1` (#138)
+common/version.go
+web/package.json
+
+Author: boojack:	chore: add upload resource button
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/less/resources-dialog.less
+
+Author: boojack:	chore: use dropdown in member section
+web/src/components/Settings/MemberSection.tsx
+web/src/less/settings/member-section.less
+
+Author: boojack:	feat: add view resource dialog
+api/resource.go
+server/resource.go
+store/resource.go
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ResourcesDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/components/common/Dropdown.tsx
+web/src/helpers/api.ts
+web/src/less/archived-memo-dialog.less
+web/src/less/common-dialog.less
+web/src/less/common/dropdown.less
+web/src/less/resources-dialog.less
+web/src/less/shortcut-list.less
+web/src/services/resourceService.ts
+web/src/types/modules/resource.d.ts
+
+Author: boojack:	chore: update search bar styles
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/less/daily-review-dialog.less
+web/src/less/memo-card-dialog.less
+web/src/less/preview-image-dialog.less
+web/src/less/search-bar.less
+
+Author: boojack:	chore: use `cors` middleware
+server/server.go
+
+Author: boojack:	chore: fix typo
+store/memo.go
+
+Author: boojack:	chore: update feather icon
+web/index.html
+web/package.json
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/DailyReviewDialog.tsx
+web/src/components/Dialog/CommonDialog.tsx
+web/src/components/GitHubBadge.tsx
+web/src/components/Icon.ts
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/SearchBar.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UserBanner.tsx
+web/src/components/common/DatePicker.tsx
+web/src/components/common/Selector.tsx
+web/src/less/daily-review-dialog.less
+web/src/less/github-badge.less
+web/src/less/memo.less
+web/src/less/search-bar.less
+web/src/less/shortcut-list.less
+web/yarn.lock
+
+Author: boojack:	chore: fix typo
+README.md
+
+Author: boojack:	chore: update readme
+README.md
+
+Author: boojack:	chore: remove build `dev` image
+.github/workflows/build-and-push-dev-image.yml
+
+Author: boojack:	chore: release `v0.3.0` (#136)
+common/version.go
+web/package.json
+
+Author: boojack:	chore: show inline image in daily review dialog (#135)
+web/src/components/ArchivedMemo.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/helpers/marked.ts
+web/src/less/memo-content.less
+
+Author: boojack:	chore: update member setting styles
+web/index.html
+web/src/components/Settings/MemberSection.tsx
+web/src/less/memo-card-dialog.less
+web/src/less/search-bar.less
+web/src/less/settings/member-section.less
+
+Author: boojack:	chore: update daily review dialog style
+web/src/components/DailyReviewDialog.tsx
+web/src/less/daily-review-dialog.less
+
+Author: boojack:	chore: fix shortcut list buttons style
+web/src/less/shortcut-list.less
+
+Author: boojack:	chore: add `CommonDialog`
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/DailyReviewDialog.tsx
+web/src/components/Dialog/BaseDialog.tsx
+web/src/components/Dialog/CommonDialog.tsx
+web/src/components/Dialog/index.ts
+web/src/components/MemoCardDialog.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/less/base-dialog.less
+web/src/less/common-dialog.less
+web/src/less/confirm-reset-openid-dialog.less
+web/src/less/dialog.less
+web/src/less/memo-card-dialog.less
+
+Author: boojack:	fix: acl middleware
+server/acl.go
+server/memo.go
+server/resource.go
+server/shortcut.go
+server/user.go
+
+Author: boojack:	chore: update visibility selector style
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/less/memo-card-dialog.less
+web/src/less/memo.less
+
+Author: boojack:	chore: update `build.sh`
+scripts/build.sh
+
+Author: boojack:	chore: update acl middleware
+server/acl.go
+server/memo.go
+server/server.go
+server/tag.go
+server/user.go
+store/user.go
+
+Author: boojack:	chore: update favicon
+web/index.html
+web/public/logo.png
+
+Author: boojack:	chore: update member list action buttons
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/helpers/api.ts
+web/src/less/dialog.less
+web/src/less/settings/member-section.less
+web/src/services/userService.ts
+web/src/types/modules/user.d.ts
+
+Author: boojack:	feat: update delete user api
+server/user.go
+store/memo.go
+store/resource.go
+store/shortcut.go
+store/user.go
+
+Author: boojack:	feat: add delete user api
+api/user.go
+server/user.go
+store/db/seed/10001__user.sql
+store/user.go
+
+Author: boojack:	chore: add visibility selector
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/less/memo-card-dialog.less
+web/src/types/modules/memo.d.ts
+
+Author: boojack:	feat: update finding memo with visibility
+api/auth.go
+api/memo.go
+server/basic_auth.go
+server/memo.go
+server/tag.go
+server/user.go
+store/db/seed/10002__memo.sql
+store/memo.go
+
+Author: boojack:	chore: update signin button in visitor mode
+web/src/App.tsx
+web/src/components/MemoList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/less/home.less
+web/src/main.tsx
+web/src/pages/Home.tsx
+web/src/services/locationService.ts
+web/src/store/modules/location.ts
+
+Author: boojack:	chore: update migration folder
+store/db/db.go
+store/db/migration/dev/LATEST__SCHEMA.sql
+store/db/migration/prod/0.2/00__user_role.sql
+store/db/migration/prod/0.2/01__memo_visibility.sql
+store/db/migration/prod/0.3/00__memo_visibility_protected.sql
+store/db/migration/prod/LATEST__SCHEMA.sql
+
+Author: boojack:	chore: update `memo` visibility field (#132)
+common/version.go
+store/db/migration/0.2/00__user_role.sql
+store/db/migration/0.3/00__memo_visibility_protected.sql
+store/db/migration/LATEST__SCHEMA.sql
+
+Author: boojack:	chore: update readme
+README.md
+
+Author: boojack:	chore: update error message (#129)
+web/src/components/MemoEditor.tsx
+
+Author: boojack:	chore: update live demo link
+README.md
+
+Author: boojack:	chore: release `v0.2.2` (#127)
+common/version.go
+web/package.json
+
+Author: boojack:	chore: update style
+web/src/less/daily-memo.less
+web/src/less/setting-dialog.less
+
+Author: boojack:	chore: create backup when migration
+server/profile/profile.go
+store/db/db.go
+
+Author: boojack:	chore: update icon button styles
+web/src/components/Memo.tsx
+web/src/components/UserBanner.tsx
+web/src/less/common/selector.less
+web/src/less/daily-review-dialog.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo.less
+web/src/pages/Home.tsx
+
+Author: boojack:	chore: update readme (#124)
+README.md
+
+Author: boojack:	chore: update `html2image`
+web/src/components/SearchBar.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/labs/html2image/index.ts
+web/src/less/shortcut-list.less
+
+Author: boojack:	chore: fix icon style
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/DailyReviewDialog.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/components/common/Selector.tsx
+web/src/less/common/selector.less
+web/src/less/create-shortcut-dialog.less
+web/src/less/dialog.less
+web/src/less/memo-card-dialog.less
+web/src/less/setting-dialog.less
+web/src/less/siderbar.less
+
+Author: boojack:	chore: use `fontawesome` instead of `material icons`
+web/index.html
+web/public/github.webp
+web/public/icons/add.svg
+web/public/icons/arrow-left.svg
+web/public/icons/arrow-right.svg
+web/public/icons/checkbox-active.svg
+web/public/icons/checkbox.svg
+web/public/icons/close-fullscreen.svg
+web/public/icons/close.svg
+web/public/icons/download.svg
+web/public/icons/edit.svg
+web/public/icons/image.svg
+web/public/icons/invisibility.svg
+web/public/icons/menu.svg
+web/public/icons/more-white.svg
+web/public/icons/more.svg
+web/public/icons/open-fullscreen.svg
+web/public/icons/pin.svg
+web/public/icons/pinned.svg
+web/public/icons/search.svg
+web/public/icons/share.svg
+web/public/icons/tag.svg
+web/public/icons/visibility.svg
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/DailyReviewDialog.tsx
+web/src/components/GitHubBadge.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/SearchBar.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UserBanner.tsx
+web/src/components/common/DatePicker.tsx
+web/src/components/common/Selector.tsx
+web/src/less/common/date-picker.less
+web/src/less/editor.less
+web/src/less/github-badge.less
+web/src/less/memo.less
+web/src/less/search-bar.less
+web/src/less/shortcut-list.less
+
+Author: boojack:	fix: generate html image in safari (#123)
+web/src/labs/html2image/getCloneStyledElement.ts
+web/src/labs/html2image/index.ts
+web/src/labs/html2image/waitImageLoaded.ts
+web/src/less/share-memo-image-dialog.less
+
+Author: boojack:	chore: update material icons
+web/public/icons/arrow-left.svg
+web/public/icons/arrow-right.svg
+web/public/icons/close-fullscreen.svg
+web/public/icons/close.svg
+web/public/icons/download.svg
+web/public/icons/edit.svg
+web/public/icons/invisibility.svg
+web/public/icons/open-fullscreen.svg
+web/public/icons/pin.svg
+web/public/icons/pinned.svg
+web/public/icons/share.svg
+web/public/icons/visibility.svg
+
+Author: boojack:	chore: add `dayjs` to parse datetime
+web/package.json
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/UserBanner.tsx
+web/src/less/memo.less
+web/src/less/user-banner.less
+web/yarn.lock
+
+Author: boojack:	chore: update github badge style
+web/src/components/GitHubBadge.tsx
+web/src/less/github-badge.less
+
+Author: boojack:	chore: release `v0.2.1` (#120)
+README.md
+common/version.go
+web/package.json
+
+Author: boojack:	fix: remove axios withCredentials
+web/src/helpers/api.ts
+
+Author: boojack:	chore: fix hover heatmap
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/consts.ts
+web/src/less/usage-heat-map.less
+
+Author: boojack:	chore: add github badge
+web/public/github.webp
+web/src/components/AboutSiteDialog.tsx
+web/src/components/GitHubBadge.tsx
+web/src/helpers/api.ts
+web/src/less/about-site-dialog.less
+web/src/less/editor.less
+web/src/less/github-badge.less
+web/src/less/memo-editor.less
+web/src/less/siderbar.less
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+
+Author: boojack:	chore: use echo static middleware to serve dist
+.gitignore
+server/embed_frontend.go
+
+Author: boojack:	chore: update create memo with visibility
+api/memo.go
+server/memo.go
+store/memo.go
+web/src/types/modules/memo.d.ts
+
+Author: boojack:	chore: update `vite`
+web/package.json
+web/vite.config.ts
+web/yarn.lock
+
+Author: boojack:	chore: update button elements
+web/src/components/DailyReviewDialog.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/UserBanner.tsx
+web/src/less/tag-list.less
+
+Author: boojack:	feat: use go embed
+.gitignore
+Dockerfile
+server/dist/index.html
+server/embed_frontend.go
+server/server.go
+web/index.html
+web/package.json
+web/public/favicon.svg
+web/vite.config.ts
+web/yarn.lock
+
+Author: boojack:	chore: update lock file
+web/yarn.lock
+
+Author: boojack:	chore: update user store
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/components/UserBanner.tsx
+web/src/helpers/consts.ts
+web/src/helpers/filter.ts
+web/src/pages/Home.tsx
+web/src/services/memoService.ts
+web/src/services/userService.ts
+web/src/store/modules/user.ts
+
+Author: boojack:	chore: fix editor z-index
+web/src/less/home.less
+web/src/less/memo-content.less
+web/src/less/siderbar.less
+web/src/less/usage-heat-map.less
+
+Author: boojack:	chore: update seed data
+store/db/migration/LATEST__SCHEMA.sql
+store/db/seed/10002__memo.sql
+store/db/seed/10003__memo_organizer.sql
+
+Author: boojack:	chore: fix z-index
+web/src/less/dialog.less
+web/src/less/home.less
+web/src/less/memo.less
+web/src/less/shortcut-list.less
+web/src/less/siderbar.less
+web/src/less/usage-heat-map.less
+web/tailwind.config.js
+
+Author: boojack:	feat: fullscreen editor
+web/public/icons/close-fullscreen.svg
+web/public/icons/open-fullscreen.svg
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/less/memo-editor.less
+web/src/less/siderbar.less
+
+Author: boojack:	chore: update `demo.webp`
+README.md
+resources/demo.png
+resources/demo.webp
+
+Author: boojack:	fix: data desensitize
+server/user.go
+
+Author: boojack:	chore: release `v0.2.0` (#114)
+README.md
+common/version.go
+web/package.json
+
+Author: boojack:	fix: schema migration for minor version
+bin/server/cmd/root.go
+store/db/db.go
+store/db/migration/0.2/00__user_role.sql
+store/db/migration_history.go
+store/db/table.go
+
+Author: boojack:	chore: use flags instead of env vars
+.gitignore
+bin/server/cmd/root.go
+scripts/build.sh
+server/profile/profile.go
+
+Author: boojack:	chore: add `latest` docker tag (#113)
+.github/workflows/build-and-push-release-image.yml
+
+Author: boojack:	chore: update visitor view buttons
+server/basic_auth.go
+server/memo.go
+server/shortcut.go
+server/tag.go
+store/db/seed/10002__memo.sql
+web/src/components/MemoList.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/Sidebar.tsx
+web/src/less/memo-list.less
+web/src/pages/Home.tsx
+
+Author: boojack:	fix: visitor view in frontend
+web/src/components/MemoCardDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/UserBanner.tsx
+web/src/helpers/api.ts
+web/src/less/siderbar.less
+web/src/less/user-banner.less
+web/src/pages/Home.tsx
+web/src/services/memoService.ts
+web/src/services/shortcutService.ts
+web/src/services/userService.ts
+
+Author: boojack:	chore: update get user by id
+server/basic_auth.go
+server/user.go
+
+Author: boojack:	feat: update memo visibility in frontend
+server/memo.go
+server/server.go
+server/user.go
+store/memo.go
+web/public/icons/visibility.svg
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/UserBanner.tsx
+web/src/pages/Home.tsx
+web/src/types/modules/memo.d.ts
+
+Author: boojack:	feat: add `visibility` field to memo (#109)
+api/memo.go
+server/memo.go
+store/db/migration/0.2/01__memo_visibility.sql
+store/db/migration/LATEST__SCHEMA.sql
+store/db/seed/10002__memo.sql
+store/memo.go
+
+Author: boojack:	fix: open id checking order
+server/basic_auth.go
+web/src/components/UserBanner.tsx
+web/src/pages/Home.tsx
+
+Author: boojack:	chore: rename user role (#108)
+api/system.go
+api/user.go
+server/auth.go
+server/system.go
+server/user.go
+store/db/migration/0.2/00__user_role.sql
+store/db/migration/LATEST__SCHEMA.sql
+store/db/seed/10001__user.sql
+store/user.go
+web/src/components/SettingDialog.tsx
+web/src/components/UserBanner.tsx
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+web/src/types/modules/system.d.ts
+web/src/types/modules/user.d.ts
+
+Author: boojack:	refactor: visitor view (#107)
+api/auth.go
+server/auth.go
+server/memo.go
+server/server.go
+server/shortcut.go
+server/tag.go
+store/db/seed/10002__memo.sql
+web/package.json
+web/src/components/Memo.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UserBanner.tsx
+web/src/helpers/api.ts
+web/src/helpers/utils.ts
+web/src/pages/Home.tsx
+web/src/pages/Signin.tsx
+web/src/services/locationService.ts
+web/src/services/memoService.ts
+web/src/services/shortcutService.ts
+web/src/services/userService.ts
+web/src/store/modules/location.ts
+web/src/types/modules/memo.d.ts
+web/src/types/modules/shortcut.d.ts
+web/src/types/modules/tag.d.ts
+web/yarn.lock
+
+Author: boojack:	chore: reorder imports manually (#106)
+web/.eslintrc.json
+web/src/App.tsx
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/Dialog.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UserBanner.tsx
+web/src/less/app.less
+web/src/main.tsx
+
+Author: Hyoban:	feat: personal memos page (#105)
+server/basic_auth.go
+server/memo.go
+server/shortcut.go
+server/tag.go
+server/user.go
+store/db/seed/10001__user.sql
+store/db/seed/10002__memo.sql
+web/.eslintrc.json
+web/src/components/Memo.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/components/UserBanner.tsx
+web/src/helpers/api.ts
+web/src/pages/Home.tsx
+web/src/services/memoService.ts
+web/src/services/shortcutService.ts
+web/src/services/userService.ts
+web/src/store/modules/location.ts
+
+Author: Hyoban:	fix: banner text click not work (#104)
+web/src/services/locationService.ts
+
+Author: boojack:	chore: fix missing extend style item
+web/tailwind.config.js
+
+Author: boojack:	chore: make editor sticky
+web/src/components/MemoCardDialog.tsx
+web/src/less/editor.less
+web/src/less/home.less
+web/src/less/memo.less
+web/src/less/memos-header.less
+web/src/less/preview-image-dialog.less
+web/src/less/share-memo-image-dialog.less
+web/src/less/shortcut-list.less
+web/src/pages/Home.tsx
+web/src/services/memoService.ts
+web/tailwind.config.js
+
+Author: boojack:	chore: fix memos amount
+web/src/components/Settings/MyAccountSection.tsx
+web/src/less/editor.less
+web/src/less/setting-dialog.less
+web/src/store/modules/memo.ts
+web/tailwind.config.js
+
+Author: boojack:	feat: use api with open_id instead of webhooks
+server/basic_auth.go
+server/webhook.go
+
+Author: boojack:	chore: update github action
+.github/workflows/build-and-push-test-image.yml
+
+Author: boojack:	choe: update shortcut actived style
+web/src/components/ShortcutList.tsx
+web/src/less/shortcut-list.less
+web/src/less/tag-list.less
+
+Author: boojack:	fix: patch memo missing creator_id
+store/memo.go
+
+Author: boojack:	chore: update tag list selector
+web/src/components/MemoEditor.tsx
+web/src/less/editor.less
+web/src/less/memo-content.less
+web/src/less/memo-editor.less
+
+Author: boojack:	fix: dockerfile
+Dockerfile
+
+Author: boojack:	feat: support multi platforms docker image (#103)
+.github/workflows/build-and-push-dev-image.yml
+.github/workflows/build-and-push-release-image.yml
+.github/workflows/build-and-push-test-image.yml
+Dockerfile
+
+Author: boojack:	chore: add test github action (#102)
+.github/workflows/build-and-push-test-image.yml
+Dockerfile
+
+Author: boojack:	chore: update buildx version
+.github/workflows/build-and-push-dev-image.yml
+.github/workflows/build-and-push-release-image.yml
+
+Author: boojack:	chore: update Dockerfile
+Dockerfile
+
+Author: boojack:	chore: support multi-plantform for docker
+.github/workflows/build-and-push-dev-image.yml
+.github/workflows/build-and-push-release-image.yml
+
+Author: boojack:	chore: update demo.png
+resources/demo.png
+
+Author: boojack:	chore: update seed data
+store/db/seed/10002__memo.sql
+
+Author: boojack:	chore: update todo block
+web/src/components/DailyMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/helpers/marked.ts
+web/src/less/memo-content.less
+web/src/less/memo.less
+
+Author: boojack:	chore: use `undefined` instead of `UNKNOWN_ID`
+web/src/components/Memo.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/TagList.tsx
+
+Author: boojack:	chore: update seed data
+server/tag.go
+store/db/seed/10002__memo.sql
+web/src/less/memo-content.less
+
+Author: boojack:	chore: rename delete to archive
+web/src/components/ArchivedMemo.tsx
+web/src/components/ArchivedMemoDialog.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoTrashDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/less/archived-memo-dialog.less
+web/src/less/memo.less
+web/src/less/shortcut-list.less
+web/src/less/tag-list.less
+web/src/services/memoService.ts
+
+Author: boojack:	feat: schema migration handler (#100)
+common/version.go
+server/memo.go
+server/profile/profile.go
+server/resource.go
+server/shortcut.go
+server/webhook.go
+store/db/db.go
+store/db/migration/00000__reset.sql
+store/db/migration/LATEST__SCHEMA.sql
+store/db/migration_history.go
+web/src/components/AboutSiteDialog.tsx
+web/src/less/about-site-dialog.less
+
+Author: boojack:	chore: add version checker
+store/db/db.go
+store/db/migration_history.go
+
+Author: boojack:	Merge branch 'main' of github.com:justmemos/memos
+Author: boojack:	chore: update docker username
+.github/workflows/build-and-push-dev-image.yml
+
+Author: boojack:	feat: toggle todo status by clicking (#99)
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/helpers/marked.ts
+web/src/less/memo-content.less
+
+Author: boojack:	chore: release v0.1.3 (#98)
+.github/workflows/build-and-push-release-image.yml
+README.md
+common/version.go
+store/db/db.go
+store/db/table.go
+web/package.json
+
+Author: boojack:	fix: upsert migration history
+store/db/db.go
+store/db/migration_history.go
+
+Author: boojack:	chore: update signup page style
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+
+Author: boojack:	chore: update setting dialog style
+web/src/components/SettingDialog.tsx
+web/src/less/menu-btns-popup.less
+web/src/less/setting-dialog.less
+
+Author: boojack:	chore: update seed data
+store/db/migration/00000__reset.sql
+store/db/migration/00000__schema.sql
+store/db/seed/10002__memo.sql
+store/db/seed/10003__memo_organizer.sql
+
+Author: boojack:	chore: fix expand style
+web/src/components/Memo.tsx
+web/src/less/memo.less
+
+Author: boojack:	chore: update content parser (#97)
+web/src/components/Memo.tsx
+web/src/components/MemoList.tsx
+web/src/helpers/marked.ts
+web/src/less/daily-memo.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo-content.less
+web/src/less/memo.less
+web/src/less/tag-list.less
+
+Author: boojack:	chore: get tags by openid (#95)
+server/webhook.go
+
+Author: boojack:	chore: download image by one click (#94)
+web/public/icons/download.svg
+web/src/components/PreviewImageDialog.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/less/preview-image-dialog.less
+
+Author: boojack:	chore: rename module
+api/system.go
+bin/server/cmd/root.go
+bin/server/main.go
+go.mod
+server/auth.go
+server/basic_auth.go
+server/memo.go
+server/profile/profile.go
+server/resource.go
+server/server.go
+server/shortcut.go
+server/system.go
+server/tag.go
+server/user.go
+server/webhook.go
+store/db/db.go
+store/memo.go
+store/memo_organizer.go
+store/resource.go
+store/shortcut.go
+store/store.go
+store/user.go
+
+Author: Hyoban:	fix: cannot register in production (#91)
+server/system.go
+
+Author: boojack:	chore: rename to `DailyReviewDialog`
+resources/demo.png
+web/public/icons/arrow-left.svg
+web/public/icons/arrow-right.svg
+web/src/components/DailyReviewDialog.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/less/daily-review-dialog.less
+
+Author: boojack:	chore: restore icon
+web/public/icons/more-white.svg
+web/src/components/MemoEditor.tsx
+
+Author: boojack:	chore: update sharing image preview
+web/src/components/PreviewImageDialog.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/less/daily-memo.less
+web/src/less/global.less
+web/src/less/preview-image-dialog.less
+web/src/less/share-memo-image-dialog.less
+web/src/less/toast.less
+
+Author: boojack:	fix: mouse hover in heatmap
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/utils.ts
+web/src/less/usage-heat-map.less
+
+Author: Steven:	chore: release v0.1.2 (#88)
+README.md
+common/version.go
+resources/demo.png
+web/package.json
+
+Author: boojack:	chore: add image uploading status
+web/src/components/MemoEditor.tsx
+web/src/less/editor.less
+web/src/less/setting-dialog.less
+
+Author: boojack:	chore: add `ping` button
+web/src/components/MenuBtnsPopup.tsx
+web/src/less/toast.less
+
+Author: Tiger:	fix: content link style (#86)
+web/src/less/memo-content.less
+
+Author: boojack:	chore: update popup button styles
+web/public/icons/close.svg
+web/public/icons/edit.svg
+web/public/icons/share.svg
+web/src/components/Memo.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/less/memo.less
+web/src/less/setting-dialog.less
+web/src/less/settings/member-section.less
+web/src/less/settings/my-account-section.less
+web/src/less/shortcut-list.less
+
+Author: boojack:	chore: data desensitize for owner
+server/auth.go
+server/basic_auth.go
+server/memo.go
+server/resource.go
+server/shortcut.go
+server/system.go
+server/tag.go
+server/user.go
+server/webhook.go
+
+Author: Steven:	chore: expand/fold memo content button (#84)
+web/src/components/Memo.tsx
+web/src/components/MemoTrashDialog.tsx
+web/src/less/memo.less
+
+Author: boojack:	chore: get tags from exist memos
+server/tag.go
+
+Author: boojack:	chore: update daily dialog style
+web/src/helpers/api.ts
+web/src/less/daily-memo-diary-dialog.less
+web/src/services/memoService.ts
+web/src/services/shortcutService.ts
+
+Author: boojack:	fix: response type
+server/memo.go
+server/tag.go
+store/memo.go
+
+Author: Steven:	chore: use markdown image syntax (#83)
+web/src/components/DailyMemo.tsx
+web/src/components/DeletedMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/helpers/consts.ts
+web/src/less/daily-memo-diary-dialog.less
+web/src/less/memo-content.less
+web/src/less/memo.less
+
+Author: Steven:	feat: add `/api/tag` (#82)
+api/memo.go
+server/memo.go
+server/server.go
+server/tag.go
+server/webhook.go
+store/memo.go
+
+Author: boojack:	chore: fix date selector style
+web/src/less/daily-memo-diary-dialog.less
+
+Author: Steven:	chore: update memo action buttons style (#80)
+web/public/icons/arrow-right-white.svg
+web/public/icons/edit-white.svg
+web/public/icons/more-white.svg
+web/public/icons/pin.svg
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/less/memo.less
+web/src/main.tsx
+
+Author: Steven:	chore: show daily memos view in sidebar (#79)
+web/src/components/DailyMemo.tsx
+web/src/components/DailyMemoDiaryDialog.tsx
+web/src/components/MemoTrashDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/components/UserBanner.tsx
+web/src/less/about-site-dialog.less
+web/src/less/daily-memo-diary-dialog.less
+web/src/less/daily-memo.less
+web/src/less/memo-content.less
+web/src/less/menu-btns-popup.less
+web/src/less/user-banner.less
+
+Author: STEVEN:	chore: release `v0.1.1` (#77)
+README.md
+common/version.go
+web/package.json
+
+Author: boojack:	fix: hidden priority
+web/src/components/DailyMemoDiaryDialog.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/common/Selector.tsx
+
+Author: STEVEN:	fix: tag regex (#76)
+web/src/components/Memo.tsx
+web/src/helpers/consts.ts
+web/src/less/memo-content.less
+web/src/less/memo.less
+
+Author: STEVEN:	feat: responsive view (#75)
+LICENSE
+web/package.json
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/helpers/api.ts
+web/src/less/app.less
+web/src/less/global.less
+web/src/less/home.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo-trash-dialog.less
+web/src/less/memos-header.less
+web/src/less/menu-btns-popup.less
+web/src/less/mixin.less
+web/src/less/search-bar.less
+web/src/less/setting-dialog.less
+web/src/less/settings/my-account-section.less
+web/src/less/siderbar.less
+web/src/less/signin.less
+web/src/pages/Home.tsx
+web/tsconfig.json
+
+Author: boojack:	fix: tag ending space
+store/memo.go
+
+Author: STEVEN:	chore: find memo by tag (#74)
+api/memo.go
+server/memo.go
+server/webhook.go
+store/memo.go
+
+Author: boojack:	chore: update deploy guide in readme
+README.md
+
+Author: boojack:	chore: add `ON DELETE CASCADE`
+store/db/migration/10001__schema.sql
+
+Author: boojack:	chore: update router
+web/src/hooks/useLoading.ts
+web/src/hooks/useRefresh.ts
+web/src/less/home.less
+web/src/less/memos.less
+web/src/pages/Home.tsx
+web/src/pages/Memos.tsx
+web/src/routers/homeRouter.tsx
+web/src/routers/index.ts
+
+Author: STEVEN:	fix: sort tags in creating shortcut (#69)
+web/src/components/CreateShortcutDialog.tsx
+
+Author: boojack:	chore: add patch memo by open api
+server/webhook.go
+
+Author: STEVEN:	chore: release v0.1.0 (#65)
+README.md
+common/version.go
+web/package.json
+
+Author: boojack:	fix: initial memo filter
+web/src/components/MemoFilter.tsx
+
+Author: boojack:	chore: fix upload image insert text
+web/src/components/MemoEditor.tsx
+
+Author: boojack:	chore: update store selector
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/components/UserBanner.tsx
+web/src/pages/Home.tsx
+web/src/store/modules/memo.ts
+web/src/store/modules/shortcut.ts
+web/src/store/modules/user.ts
+
+Author: boojack:	chore: add default `ORDER BY`
+store/memo.go
+store/resource.go
+store/shortcut.go
+store/user.go
+
+Author: boojack:	chore: use `axios` instead of `fetch`
+web/.eslintrc.json
+web/package.json
+web/src/components/AboutSiteDialog.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/DailyMemoDiaryDialog.tsx
+web/src/components/DeletedMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemoTrashDialog.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/api.ts
+web/src/helpers/storage.ts
+web/src/helpers/utils.ts
+web/src/pages/Signin.tsx
+web/src/services/locationService.ts
+web/src/services/memoService.ts
+web/src/services/resourceService.ts
+web/src/services/shortcutService.ts
+web/src/services/userService.ts
+web/yarn.lock
+
+Author: boojack:	chore: update redux store and service
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/DeletedMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoTrashDialog.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/api.ts
+web/src/less/search-bar.less
+web/src/services/editorStateService.ts
+web/src/services/locationService.ts
+web/src/services/memoService.ts
+web/src/services/shortcutService.ts
+web/src/services/userService.ts
+web/src/store/modules/editor.ts
+web/src/store/modules/location.ts
+web/src/store/modules/memo.ts
+web/src/store/modules/user.ts
+web/src/types/location.d.ts
+web/src/types/modules/shortcut.d.ts
+
+Author: boojack:	chore: update server profile
+api/system.go
+bin/server/cmd/root.go
+server/profile/profile.go
+server/server.go
+store/db/db.go
+store/db/migration_history.go
+store/db/table.go
+store/store.go
+
+Author: boojack:	chore: remove customize redux
+web/src/helpers/consts.ts
+web/src/labs/Provider.tsx
+web/src/labs/combineReducers.ts
+web/src/labs/createStore.ts
+web/src/labs/useSelector.ts
+
+Author: boojack:	feat: `store/db` module with sqlite
+bin/server/cmd/root.go
+go.mod
+store/db/db.go
+store/db/migration/10000__reset.sql
+store/db/migration/10001__schema.sql
+store/db/migration_history.go
+store/db/seed/10000__reset.sql
+store/db/seed/10001__user.sql
+store/db/seed/10002__memo.sql
+store/db/seed/10003__memo_organizer.sql
+store/db/seed/10004__shortcut.sql
+store/db/table.go
+store/error.go
+store/memo.go
+store/memo_organizer.go
+store/resource.go
+store/shortcut.go
+store/store.go
+store/user.go
+
+Author: boojack:	fix: memo import
+web/src/components/Settings/PreferencesSection.tsx
+web/src/services/memoService.ts
+
+Author: boojack:	chore: rename repo
+README.md
+server/server.go
+web/src/components/AboutSiteDialog.tsx
+web/vite.config.ts
+
+Author: boojack:	refactor: use `redux`
+web/package.json
+web/src/App.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/Dialog.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/SearchBar.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/components/UserBanner.tsx
+web/src/less/shortcut-list.less
+web/src/main.tsx
+web/src/pages/Home.tsx
+web/src/services/editorStateService.ts
+web/src/services/globalStateService.ts
+web/src/services/index.ts
+web/src/services/locationService.ts
+web/src/services/memoService.ts
+web/src/services/resourceService.ts
+web/src/services/shortcutService.ts
+web/src/services/userService.ts
+web/src/store/index.ts
+web/src/store/modules/editor.ts
+web/src/store/modules/location.ts
+web/src/store/modules/memo.ts
+web/src/store/modules/shortcut.ts
+web/src/store/modules/user.ts
+web/src/stores/appContext.ts
+web/src/stores/appStore.ts
+web/src/stores/globalStateStore.ts
+web/src/stores/locationStore.ts
+web/src/stores/memoStore.ts
+web/src/stores/shortcutStore.ts
+web/src/stores/userStore.ts
+web/src/types/common.d.ts
+web/src/types/location.d.ts
+web/yarn.lock
+
+Author: boojack:	fix: web build
+web/package.json
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemosHeader.tsx
+web/yarn.lock
+
+Author: boojack:	fix: shortcutId in filter
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/helpers/api.ts
+web/src/services/locationService.ts
+web/src/services/shortcutService.ts
+web/src/stores/locationStore.ts
+web/src/stores/shortcutStore.ts
+web/src/types/location.d.ts
+web/src/types/modules/shortcut.d.ts
+
+Author: boojack:	chore: fix sign in style
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+
+Author: boojack:	chore: add greeting banner
+bin/server/cmd/root.go
+server/server.go
+
+Author: boojack:	chore: update demo user
+store/seed/10001__user.sql
+web/src/components/AboutSiteDialog.tsx
+web/src/less/about-site-dialog.less
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+web/tailwind.config.js
+
+Author: boojack:	chore: update readme
+README.md
+
+Author: STEVEN:	feat: seed data only in dev mode (#61)
+store/seed/10001__user.sql
+store/sqlite.go
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+
+Author: boojack:	chore: fix build
+web/src/components/UsageHeatMap.tsx
+
+Author: boojack:	chore: update store types
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/DailyMemoDiaryDialog.tsx
+web/src/components/DeletedMemo.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemoTrashDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/helpers/api.ts
+web/src/helpers/consts.ts
+web/src/helpers/filter.ts
+web/src/helpers/utils.ts
+web/src/less/memo.less
+web/src/less/settings/member-section.less
+web/src/less/shortcut-list.less
+web/src/less/signin.less
+web/src/less/tag-list.less
+web/src/pages/Signin.tsx
+web/src/services/globalStateService.ts
+web/src/services/memoService.ts
+web/src/services/shortcutService.ts
+web/src/services/userService.ts
+web/src/stores/globalStateStore.ts
+web/src/stores/memoStore.ts
+web/src/stores/shortcutStore.ts
+web/src/stores/userStore.ts
+web/src/types/api.d.ts
+web/src/types/common.d.ts
+web/src/types/models.d.ts
+web/src/types/module/system.d.ts
+web/src/types/modules/common.d.ts
+web/src/types/modules/memo.d.ts
+web/src/types/modules/resource.d.ts
+web/src/types/modules/shortcut.d.ts
+web/src/types/modules/system.d.ts
+web/src/types/modules/user.d.ts
+web/src/types/view.d.ts
+
+Author: boojack:	refactor: raw struct for store
+api/api.go
+api/memo.go
+api/memo_organizer.go
+api/shortcut.go
+api/user.go
+server/auth.go
+server/basic_auth.go
+server/memo.go
+server/user.go
+server/webhook.go
+store/memo.go
+store/memo_organizer.go
+store/migration/10000__reset.sql
+store/migration/10001__schema.sql
+store/resource.go
+store/seed/10000__reset.sql
+store/seed/10001__user.sql
+store/seed/10002__memo.sql
+store/seed/10003__memo_organizer.sql
+store/seed/10004__shortcut.sql
+store/shortcut.go
+store/user.go
+
+Author: boojack:	fix: version getter
+.github/workflows/build-and-push-dev-image.yml
+.github/workflows/build-and-push-release-image.yml
+README.md
+VERSION
+common/profile.go
+common/version.go
+
+Author: STEVEN:	chore: release 0.0.1 (#57)
+README.md
+
+Author: boojack:	chore: add service version
+VERSION
+api/memo.go
+api/system.go
+bin/server/cmd/root.go
+common/profile.go
+server/memo.go
+server/system.go
+store/memo.go
+store/migration/10001__schema.sql
+web/src/components/AboutSiteDialog.tsx
+web/src/less/about-site-dialog.less
+web/src/types/api.d.ts
+web/src/types/module/system.d.ts
+
+Author: boojack:	chore: update readme about deployment
+README.md
+
+Author: boojack:	chore: update button style
+web/src/components/CreateShortcutDialog.tsx
+web/src/less/common/selector.less
+web/src/less/create-shortcut-dialog.less
+web/src/less/dialog.less
+web/src/less/editor.less
+web/src/less/memo-editor.less
+web/src/less/search-bar.less
+web/src/less/settings/my-account-section.less
+web/src/less/shortcut-list.less
+
+Author: boojack:	feat: member manage section in setting dialog
+api/user.go
+server/auth.go
+server/user.go
+store/migration/10001__schema.sql
+store/user.go
+web/src/components/MemoEditor.tsx
+web/src/components/PreferencesSection.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/Settings/MemberSection.tsx
+web/src/components/Settings/MyAccountSection.tsx
+web/src/components/Settings/PreferencesSection.tsx
+web/src/helpers/api.ts
+web/src/less/dialog.less
+web/src/less/global.less
+web/src/less/my-account-section.less
+web/src/less/preferences-section.less
+web/src/less/setting-dialog.less
+web/src/less/settings/member-section.less
+web/src/less/settings/my-account-section.less
+web/src/less/settings/preferences-section.less
+web/src/less/user-banner.less
+web/src/pages/Signin.tsx
+web/src/types/api.d.ts
+web/tailwind.config.js
+
+Author: boojack:	refactor: store
+api/memo.go
+api/resource.go
+api/shortcut.go
+api/user.go
+bin/server/cmd/root.go
+server/auth.go
+server/basic_auth.go
+server/memo.go
+server/resource.go
+server/server.go
+server/shortcut.go
+server/system.go
+server/user.go
+server/webhook.go
+store/memo.go
+store/resource.go
+store/shortcut.go
+store/store.go
+store/user.go
+
+Author: STEVEN:	feat: upload resource by openid api (#55)
+server/resource.go
+server/webhook.go
+web/src/services/resourceService.ts
+
+Author: STEVEN:	feat: import data from json (#53)
+api/memo.go
+store/memo.go
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/MyAccountSection.tsx
+web/src/components/PreferencesSection.tsx
+web/src/helpers/api.ts
+web/src/less/change-password-dialog.less
+web/src/less/menu-btns-popup.less
+web/src/less/my-account-section.less
+web/src/less/setting-dialog.less
+web/src/services/memoService.ts
+
+Author: boojack:	chore: readme typo
+README.md
+
+Author: boojack:	chore: update `tech-stack.png`
+resources/tech-stack.png
+
+Author: boojack:	chore: update tag selector
+web/src/components/MemoEditor.tsx
+web/src/components/TagList.tsx
+web/src/components/UserBanner.tsx
+web/src/less/user-banner.less
+
+Author: STEVEN:	feat: add user role field (#49)
+api/auth.go
+api/system.go
+api/user.go
+resources/memos_prod.db
+server/auth.go
+server/basic_auth.go
+server/system.go
+server/user.go
+store/migration/10001__schema.sql
+store/seed/10001__user.sql
+store/sqlite.go
+store/user.go
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/MyAccountSection.tsx
+web/src/helpers/api.ts
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+web/src/services/userService.ts
+web/src/types/api.d.ts
+web/src/types/models.d.ts
+
+Author: boojack:	chore: update readme
+README.md
+
+Author: boojack:	chore: update readme
+README.md
+resources/tech-stack.png
+
+Author: boojack:	chore: fix link style
+web/src/less/memo-content.less
+
+Author: boojack:	chore: update setting dialog
+web/package.json
+web/src/components/SettingDialog.tsx
+web/src/less/setting-dialog.less
+web/tailwind.config.js
+web/yarn.lock
+
+Author: boojack:	chore: update resources
+README.md
+resources/demo.png
+resources/demo.webp
+resources/memos_prod.db
+
+Author: boojack:	chore: update styles
+web/src/components/MemoCardDialog.tsx
+web/src/components/MyAccountSection.tsx
+web/src/components/ShortcutList.tsx
+web/src/less/memo-card-dialog.less
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+
+Author: boojack:	update: seed data
+api/memo.go
+api/resource.go
+api/shortcut.go
+api/user.go
+store/migration/10001__schema.sql
+store/seed/10001__user.sql
+store/seed/10002__shortcut.sql
+
+Author: boojack:	chore: update pinned memo style
+web/src/components/Memo.tsx
+web/src/less/memo.less
+
+Author: boojack:	chore: typo `Id` to `ID`
+api/memo.go
+api/resource.go
+api/shortcut.go
+api/user.go
+server/auth.go
+server/basic_auth.go
+server/memo.go
+server/resource.go
+server/shortcut.go
+server/user.go
+server/webhook.go
+store/memo.go
+store/resource.go
+store/shortcut.go
+store/user.go
+
+Author: boojack:	chore: revert tagList
+web/src/components/Sidebar.tsx
+web/src/less/memo-trash-dialog.less
+web/src/less/shortcut-list.less
+web/src/less/tag-list.less
+
+Author: boojack:	chore: update readme with demo screenshot
+README.md
+
+Author: boojack:	chore: demo.webp
+resources/demo.webp
+
+Author: boojack:	chore: update seed data
+store/seed/10002__memo.sql
+
+Author: boojack:	feat: pin/unpin memo
+store/migration/10001__schema.sql
+web/public/icons/add.svg
+web/src/components/Memo.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/api.ts
+web/src/less/memo-filter.less
+web/src/less/memo-list.less
+web/src/less/memo.less
+web/src/less/shortcut-list.less
+web/src/services/locationService.ts
+web/src/services/memoService.ts
+web/src/types/models.d.ts
+
+Author: boojack:	chore: update deploy guide in readme
+README.md
+web/src/components/AboutSiteDialog.tsx
+
+Author: boojack:	chore: update mode flag
+common/profile.go
+server/server.go
+store/sqlite.go
+
+Author: boojack:	chore: update layout styles
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/less/common/selector.less
+web/src/less/editor.less
+web/src/less/home.less
+web/src/less/memo-editor.less
+web/src/less/memo-list.less
+web/src/less/memo.less
+web/src/less/memos.less
+web/src/less/menu-btns-popup.less
+web/src/less/shortcut-list.less
+web/src/less/siderbar.less
+web/src/less/usage-heat-map.less
+web/src/pages/Memos.tsx
+web/tailwind.config.js
+
+Author: boojack:	update: db initialization
+README.md
+common/profile.go
+docs/deploy/docker-deploy-guide.md
+server/basic_auth.go
+store/migration/10000__reset.sql
+store/migration/10001__schema.sql
+store/sqlite.go
+
+Author: email:	fix: type error
+web/src/hooks/useDebounce.ts
+
+Author: email:	chore: re yarn
+web/package.json
+web/yarn.lock
+
+Author: email:	fix: grid style
+web/src/less/editor.less
+web/src/less/home.less
+web/src/less/memo-content.less
+web/src/less/memo-filter.less
+web/src/less/memo-list.less
+web/src/less/memo.less
+web/src/less/memos.less
+
+Author: email:	chore: update readme
+README.md
+web/src/components/AboutSiteDialog.tsx
+web/src/components/StarHistoryDialog.tsx
+web/src/less/star-history-dialog.less
+
+Author: email:	chore: update readme
+README.md
+
+Author: email:	Merge branch 'main' of github.com:justmemos/memos
+Author: West Xu:	`next` docker tag deprecated (#42)
+docs/deploy/docker-deploy-guide.md
+
+Author: email:	feat: upgrade react 18
+web/package.json
+web/src/components/Dialog.tsx
+web/src/components/Toast.tsx
+web/src/main.tsx
+web/yarn.lock
+
+Author: email:	fix: convert raw memo
+web/src/less/memo-content.less
+web/src/services/memoService.ts
+
+Author: email:	chore: update dev image tag name
+.github/workflows/build-and-push-dev-image.yml
+
+Author: email:	chore: rename actions
+.github/workflows/build-and-push-dev-image.yml
+.github/workflows/build-and-push-release-image.yml
+
+Author: email:	feat: system api with profiles
+.github/workflows/build-and-push-dev-image.yml
+.github/workflows/build-and-push-release-image.yml
+bin/server/cmd/root.go
+common/profile.go
+server/server.go
+server/system.go
+store/migration/10001__schema.sql
+store/seed/10002__memo.sql
+store/sqlite.go
+
+Author: email:	feat: update sidebar style
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/Sidebar.tsx
+web/src/components/UserBanner.tsx
+web/src/less/shortcut-list.less
+web/src/less/siderbar.less
+web/src/less/user-banner.less
+web/tailwind.config.js
+
+Author: email:	feat: const session secret key in dev
+bin/server/cmd/root.go
+server/server.go
+server/user.go
+server/webhook.go
+web/src/components/PreferencesSection.tsx
+
+Author: email:	chore: clean server
+api/memo.go
+common/error.go
+server/auth.go
+server/memo.go
+server/webhook.go
+store/memo.go
+web/src/helpers/api.ts
+
+Author: email:	chore: update db initial
+store/migration/10001__schema.sql
+store/seed/10000__reset.sql
+store/seed/10000_reset.sql
+store/seed/10001__user.sql
+store/seed/10002__memo.sql
+store/sqlite.go
+
+Author: email:	chore: update styles
+web/src/components/DeletedMemo.tsx
+web/src/components/MyAccountSection.tsx
+web/src/less/memo.less
+web/src/less/my-account-section.less
+web/src/less/setting-dialog.less
+web/src/less/shortcut-list.less
+web/src/less/toast.less
+web/tailwind.config.js
+
+Author: email:	chore: update docker run commands
+Dockerfile
+docs/deploy/docker-deploy-guide.md
+
+Author: email:	chore: update db resource
+resources/memos_release.db
+
+Author: email:	chore: update about site dialog
+web/src/components/AboutSiteDialog.tsx
+
+Author: email:	fix: tags initial
+web/src/components/MemoList.tsx
+web/src/less/create-shortcut-dialog.less
+
+Author: email:	feat: use dialog instead of page
+web/src/components/MemoTrashDialog.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/SettingDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/TagList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/less/memo-trash-dialog.less
+web/src/less/memo-trash.less
+web/src/less/setting-dialog.less
+web/src/less/setting.less
+web/src/pages/Setting.tsx
+web/src/pages/Trash.tsx
+web/src/routers/homeRouter.tsx
+web/src/services/locationService.ts
+web/src/types/location.d.ts
+
+Author: email:	feat: layout style(1)
+web/package.json
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/PreferencesSection.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/storage.ts
+web/src/less/editor.less
+web/src/less/global.less
+web/src/less/home.less
+web/src/less/memo-editor.less
+web/src/less/memo-filter.less
+web/src/less/memo-list.less
+web/src/less/memo-trash.less
+web/src/less/memo.less
+web/src/less/memos.less
+web/src/less/search-bar.less
+web/src/less/setting.less
+web/src/less/siderbar.less
+web/src/pages/Home.tsx
+web/src/pages/Memos.tsx
+web/src/pages/Trash.tsx
+web/src/routers/homeRouter.tsx
+web/src/services/globalStateService.ts
+web/src/services/locationService.ts
+web/src/services/shortcutService.ts
+web/src/stores/globalStateStore.ts
+web/src/stores/locationStore.ts
+web/src/types/location.d.ts
+web/yarn.lock
+
+Author: STEVEN:	feat: add codeql.yml
+.github/workflows/codeql.yml
+
+Author: email:	feat: remove mobile styles
+web/src/App.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/Sidebar.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/helpers/consts.ts
+web/src/less/about-site-dialog.less
+web/src/less/change-password-dialog.less
+web/src/less/confirm-reset-openid-dialog.less
+web/src/less/create-shortcut-dialog.less
+web/src/less/daily-memo-diary-dialog.less
+web/src/less/dialog.less
+web/src/less/global.less
+web/src/less/home.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo-content.less
+web/src/less/memo-editor.less
+web/src/less/memo-filter.less
+web/src/less/memo-trash.less
+web/src/less/memolist.less
+web/src/less/memos-header.less
+web/src/less/menu-btns-popup.less
+web/src/less/preview-image-dialog.less
+web/src/less/search-bar.less
+web/src/less/setting.less
+web/src/less/share-memo-image-dialog.less
+web/src/less/shortcut-list.less
+web/src/less/siderbar.less
+web/src/less/star-history-dialog.less
+web/src/less/tag-list.less
+web/src/less/usage-heat-map.less
+web/src/less/user-banner.less
+web/src/pages/MemoTrash.tsx
+web/src/pages/Setting.tsx
+web/src/services/globalStateService.ts
+web/src/stores/globalStateStore.ts
+
+Author: STEVEN:	refactor: use tailwindcss in less (#34)
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/less/about-site-dialog.less
+web/src/less/app.less
+web/src/less/change-password-dialog.less
+web/src/less/confirm-reset-openid-dialog.less
+web/src/less/dialog.less
+web/src/less/global.less
+web/src/less/home.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo-content.less
+web/src/less/memos-header.less
+web/src/less/menu-btns-popup.less
+web/src/less/setting.less
+web/src/less/shortcut-list.less
+web/src/less/siderbar.less
+web/src/less/signin.less
+web/src/less/star-history-dialog.less
+web/src/less/tag-list.less
+web/src/less/toast.less
+web/src/less/usage-heat-map.less
+web/src/less/user-banner.less
+web/tailwind.config.js
+
+Author: email:	chore: update readme
+CODEOWNERS
+LICENSE
+README.md
+
+Author: email:	chore: hide textarea outline
+web/src/less/global.less
+
+Author: email:	fix: input/textarea unselectable
+web/src/less/global.less
+
+Author: email:	chore: format server code
+api/memo.go
+bin/server/cmd/profile.go
+server/auth.go
+server/memo.go
+server/resource.go
+server/shortcut.go
+server/user.go
+server/webhook.go
+
+Author: email:	feat: user hash password
+api/user.go
+bin/server/cmd/profile.go
+docs/deploy/docker-deploy-guide.md
+server/auth.go
+server/user.go
+store/seed/10001_schema.sql
+store/user.go
+web/src/pages/Signin.tsx
+
+Author: email:	chore: update deploy guide doc
+bin/server/cmd/profile.go
+docs/deploy/docker-deploy-guide.md
+store/resource.go
+
+Author: email:	feat: db release mode
+bin/server/cmd/profile.go
+bin/server/cmd/root.go
+resources/memos.db
+resources/memos_release.db
+store/sqlite.go
+
+Author: email:	feat: open api for get memos
+server/auth.go
+server/basic_auth.go
+server/memo.go
+server/webhook.go
+
+Author: email:	feat: add lodash-es package
+web/package.json
+web/src/components/Editor/Editor.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+web/src/helpers/marked.ts
+web/src/pages/Signin.tsx
+web/vite.config.ts
+web/yarn.lock
+
+Author: email:	fix: get session handler
+server/basic_auth.go
+server/server.go
+
+Author: email:	chore: remove ga and fonts
+web/index.html
+web/public/fonts/DINPro-Bold.otf
+web/public/fonts/DINPro-Regular.otf
+web/public/fonts/UbuntuMono.ttf
+web/src/labs/html2image/index.ts
+web/src/less/global.less
+web/src/less/mixin.less
+web/src/pages/Signin.tsx
+
+Author: email:	fix: delete response json
+server/memo.go
+server/resource.go
+server/shortcut.go
+store/shortcut.go
+
+Author: email:	feat: flag variables
+Dockerfile
+bin/server/cmd/profile.go
+bin/server/cmd/profile_dev.go
+bin/server/cmd/root.go
+store/seed/10001_schema.sql
+
+Author: XQ:	Merge pull request #26 from justmemos/refactor/go
+Author: email:	chore: address comments
+api/memo.go
+bin/server/cmd/profile_dev.go
+bin/server/cmd/root.go
+go.mod
+server/auth.go
+server/basic_auth.go
+server/memo.go
+server/resource.go
+server/server.go
+server/shortcut.go
+server/user.go
+server/webhook.go
+store/seed/10001_schema.sql
+
+Author: email:	feat: change main language to english
+web/src/components/AboutSiteDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/DailyMemoDiaryDialog.tsx
+web/src/components/DeletedMemo.tsx
+web/src/components/Editor/Editor.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/MyAccountSection.tsx
+web/src/components/PreferencesSection.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/SearchBar.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/TagList.tsx
+web/src/components/common/DatePicker.tsx
+web/src/components/common/Selector.tsx
+web/src/helpers/consts.ts
+web/src/helpers/filter.ts
+web/src/helpers/storage.ts
+web/src/helpers/validator.ts
+web/src/labs/createStore.ts
+web/src/pages/MemoTrash.tsx
+web/src/pages/Setting.tsx
+web/src/pages/Signin.tsx
+web/src/services/resourceService.ts
+web/src/types/basic.d.ts
+
+Author: email:	chore: readme
+README.md
+
+Author: email:	feat: update docker image tag with `next`
+.github/workflows/build-and-push-docker-image.yml
+
+Author: email:	fix: user api
+api/memo.go
+api/user.go
+server/memo.go
+server/user.go
+store/memo.go
+store/shortcut.go
+store/user.go
+web/src/helpers/api.ts
+web/src/services/userService.ts
+
+Author: email:	refactor: sync frontend
+web/src/components/CreateShortcutDialog.tsx
+web/src/components/DeletedMemo.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/MyAccountSection.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/ShortcutList.tsx
+web/src/components/Sidebar.tsx
+web/src/components/UserBanner.tsx
+web/src/helpers/api.ts
+web/src/helpers/utils.ts
+web/src/less/create-shortcut-dialog.less
+web/src/less/shortcut-list.less
+web/src/pages/MemoTrash.tsx
+web/src/pages/Signin.tsx
+web/src/services/index.ts
+web/src/services/locationService.ts
+web/src/services/memoService.ts
+web/src/services/queryService.ts
+web/src/services/resourceService.ts
+web/src/services/shortcutService.ts
+web/src/services/userService.ts
+web/src/stores/appStore.ts
+web/src/stores/globalStateStore.ts
+web/src/stores/locationStore.ts
+web/src/stores/queryStore.ts
+web/src/stores/shortcutStore.ts
+web/src/stores/userStore.ts
+web/src/types/api.d.ts
+web/src/types/location.d.ts
+web/src/types/models.d.ts
+web/vite.config.ts
+
+Author: email:	fix: resource api
+Dockerfile
+bin/server/cmd/root.go
+server/basic_auth.go
+server/resource.go
+server/server.go
+server/user.go
+server/webhook.go
+store/resource.go
+
+Author: email:	feat: compose response data
+api/user.go
+server/auth.go
+server/common.go
+server/memo.go
+server/resource.go
+server/shortcut.go
+server/user.go
+server/webhook.go
+
+Author: email:	chore(go): use `json` instead of `jsonapi`
+api/auth.go
+api/memo.go
+api/resource.go
+api/shortcut.go
+api/user.go
+go.mod
+go.sum
+server/auth.go
+server/memo.go
+server/resource.go
+server/server.go
+server/shortcut.go
+server/user.go
+server/webhook.go
+store/seed/10001_schema.sql
+store/shortcut.go
+
+Author: email:	fix: get&set session
+api/auth.go
+api/user.go
+server/auth.go
+server/jwt.go
+server/server.go
+store/user.go
+
+Author: email:	refactor: backend
+Dockerfile
+api/auth.go
+api/e/codes.go
+api/e/error.go
+api/memo.go
+api/middlewares.go
+api/query.go
+api/resource.go
+api/session.go
+api/shortcut.go
+api/spa_handler.go
+api/user.go
+api/utils.go
+api/webhooks.go
+bin/server/cmd/profile_dev.go
+bin/server/cmd/root.go
+bin/server/main.go
+common/error.go
+common/util.go
+go.mod
+go.sum
+resources/initial_db.sql
+scripts/.air.toml
+server/auth.go
+server/jwt.go
+server/main.go
+server/memo.go
+server/resource.go
+server/server.go
+server/shortcut.go
+server/user.go
+server/webhook.go
+store/db.go
+store/memo.go
+store/query.go
+store/resource.go
+store/seed/10000_reset.sql
+store/seed/10001_schema.sql
+store/shortcut.go
+store/sqlite.go
+store/user.go
+utils/common.go
+
+Author: boojack:	feat: use tailwindcss and show export btn
+web/package.json
+web/postcss.config.js
+web/src/components/PreferencesSection.tsx
+web/src/css/index.css
+web/src/less/global.less
+web/src/main.tsx
+web/tailwind.config.js
+web/yarn.lock
+
+Author: boojack:	fix: memo formater
+web/src/components/Memo.tsx
+web/src/components/MemoEditor.tsx
+
+Author: email:	feat: update readme
+README.md
+docs/deploy/docker-deploy-guide.md
+
+Author: 1900:	feat: update readme (#20)
+README.md
+
+Author: email:	fix: tag query filter
+web/src/components/MemoList.tsx
+web/src/components/TagList.tsx
+web/src/helpers/filter.ts
+web/src/pages/MemoTrash.tsx
+
+Author: email:	refactor: editor tools
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/common/OnlyWhen.tsx
+
+Author: email:	feat: tag selector popup
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/helpers/consts.ts
+web/src/helpers/filter.ts
+web/src/less/memo-editor.less
+web/src/services/memoService.ts
+
+Author: email:	feat: confirm reset openid dialog
+web/src/components/ConfirmResetOpenIdDialog.tsx
+web/src/components/MyAccountSection.tsx
+web/src/less/confirm-reset-openid-dialog.less
+web/src/less/my-account-section.less
+
+Author: email:	chore: remove config files
+config/consts.go
+resources/memos.db
+
+Author: email:	feat: support open api with webhooks
+api/auth.go
+api/user.go
+api/webhooks.go
+resources/initial_db.sql
+resources/memos.db
+server/main.go
+store/user.go
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/MyAccountSection.tsx
+web/src/helpers/api.ts
+web/src/less/mixin.less
+web/src/less/my-account-section.less
+web/src/less/preferences-section.less
+web/src/pages/Signin.tsx
+web/src/services/userService.ts
+web/src/stores/userStore.ts
+web/src/types/models.d.ts
+
+Author: email:	feat: add star-history embed iframe;
+web/src/components/AboutSiteDialog.tsx
+web/src/components/StarHistoryDialog.tsx
+web/src/less/about-site-dialog.less
+web/src/less/star-history-dialog.less
+
+Author: email:	fix: edit username inputer
+web/src/components/MyAccountSection.tsx
+web/src/less/my-account-section.less
+
+Author: STEVEN:	Feat: update editor tools (#14)
+web/public/icons/image.svg
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/less/editor.less
+
+Author: boojack:	update: resource cache
+api/resource.go
+
+Author: boojack:	fix: memo trash order by deletedAt
+web/src/services/memoService.ts
+web/vite.config.ts
+
+Author: boojack:	feat: handle upload image by drop event
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoEditor.tsx
+web/src/services/index.ts
+web/vite.config.ts
+
+Author: boojack:	feat: shorten image url length
+web/src/components/Editor/Editor.tsx
+web/src/helpers/consts.ts
+
+Author: boojack:	feat: update image by paste in editor
+web/src/components/Editor/Editor.tsx
+web/src/helpers/api.ts
+web/src/services/resourceService.ts
+web/src/types/models.d.ts
+
+Author: boojack:	chore: update resource max size
+api/e/codes.go
+api/resource.go
+
+Author: STEVEN:	chore: update err handler (#12)
+api/auth.go
+api/e/codes.go
+api/memo.go
+api/query.go
+api/resource.go
+api/user.go
+store/db.go
+store/memo.go
+store/query.go
+store/resource.go
+store/user.go
+
+Author: STEVEN:	feat: add open_id key to user (#10)
+api/user.go
+resources/initial_db.sql
+resources/memos.db
+store/user.go
+
+Author: STEVEN:	Add resources api (#9)
+api/e/codes.go
+api/memo.go
+api/query.go
+api/resource.go
+resources/initial_db.sql
+resources/memos.db
+server/main.go
+store/memo.go
+store/query.go
+store/resource.go
+web/src/helpers/api.ts
+
+Author: STEVEN:	fix: docker timezone to Asia/Shanghai (#8)
+Dockerfile
+
+Author: steven:	chore: add license and comments
+.gitignore
+LICENSE
+config/consts.go
+resources/initial_db.sql
+web/LICENSE
+
+Author: STEVEN:	feat: add build&push docker image action
+.dockerignore
+.github/workflows/build-and-push-docker-image.yml
+.gitignore
+config/consts.go
+
+Author: STEVEN:	chore: polish setting dialog (#6)
+web/src/components/PreferencesSection.tsx
+web/src/less/my-account-section.less
+web/src/less/preferences-section.less
+web/src/less/setting.less
+
+Author: boojack:	chore: update eslint config
+web/.eslintrc.json
+web/.vscode/setting.json
+
+Author: STEVEN:	fix: local timezone (#5)
+utils/common.go
+
+Author: steven:	feat: add eslint to frontend
+web/.eslintrc.json
+web/.vscode/setting.json
+web/package.json
+web/src/components/CreateQueryDialog.tsx
+web/src/components/Editor/Editor.tsx
+web/src/components/MemoList.tsx
+web/src/components/MyAccountSection.tsx
+web/src/components/PreferencesSection.tsx
+web/src/components/QueryList.tsx
+web/src/components/common/Selector.tsx
+web/src/helpers/api.ts
+web/src/helpers/utils.ts
+web/src/hooks/useLoading.ts
+web/src/hooks/useRefresh.ts
+web/src/labs/createStore.ts
+web/src/labs/html2image/convertResourceToDataURL.ts
+web/src/labs/html2image/getFontsStyleElement.ts
+web/src/labs/html2image/index.ts
+web/src/labs/useSelector.ts
+web/vite.config.ts
+web/yarn.lock
+
+Author: steven:	choro: convert html2image to arrow function
+web/src/labs/html2image/convertResourceToDataURL.ts
+web/src/labs/html2image/getCloneStyledElement.ts
+web/src/labs/html2image/getFontsStyleElement.ts
+web/src/labs/html2image/index.ts
+
+Author: steven:	fix: query pinnedAt empty value
+web/src/components/QueryList.tsx
+
+Author: steven:	feat: remove user wx_open_id key
+api/auth.go
+api/memo.go
+api/middlewares.go
+api/query.go
+api/user.go
+resources/initial_db.sql
+server/main.go
+store/user.go
+web/src/components/BindWxOpenIdDialog.tsx
+web/src/components/MyAccountSection.tsx
+web/src/helpers/api.ts
+web/src/less/change-password-dialog.less
+web/src/services/README.md
+web/src/services/userService.ts
+web/src/types/models.d.ts
+
+Author: steven:	fix user update patch null checker
+api/user.go
+
+Author: steven:	web: update about site dialog
+web/src/components/AboutSiteDialog.tsx
+web/src/pages/Signin.tsx
+
+Author: steven:	update utils file structure
+api/auth.go
+api/session.go
+store/memo.go
+store/query.go
+store/user.go
+utils/common.go
+
+Author: steven:	update users table with unique  tag
+api/auth.go
+api/user.go
+resources/initial_db.sql
+resources/memos.db
+store/user.go
+web/src/helpers/api.ts
+web/src/pages/Signin.tsx
+web/src/services/userService.ts
+
+Author: steven:	web: recover single global memo editor
+web/src/components/MemoEditor.tsx
+web/src/components/MemoList.tsx
+web/src/less/memolist.less
+
+Author: steven:	update data mounting point
+Dockerfile
+store/db.go
+
+Author: steven:	update initial default database
+resources/initial_db.sql
+resources/memos.db
+store/db.go
+
+Author: steven:	add dockerfile
+Dockerfile
+scripts/.air.toml
+server/main.go
+store/db.go
+
+Author: steven:	update github oauth callback api
+.gitignore
+api/auth.go
+main.go
+resources/memos.db
+web/src/App.tsx
+web/src/components/MyAccountSection.tsx
+
+Author: steven:	update auth api with session
+api/auth.go
+api/memo.go
+api/middlewares.go
+api/query.go
+api/session.go
+api/user.go
+api/utils.go
+go.mod
+go.sum
+resources/initial_db.sql
+resources/memos.db
+store/db.go
+store/memo.go
+store/query.go
+store/sqlite.go
+
+Author: steven:	update restful api
+api/auth.go
+api/e/codes.go
+api/e/error.go
+api/memo.go
+api/middlewares.go
+api/query.go
+api/spa_handler.go
+api/user.go
+api/utils.go
+common/utils.go
+main.go
+resources/initial_db.sql
+resources/memos.db
+scripts/.air.toml
+store/memo.go
+store/query.go
+store/user.go
+
+Author: steven:	web: update restful api
+web/package.json
+web/src/components/AboutSiteDialog.tsx
+web/src/components/BindWxOpenIdDialog.tsx
+web/src/components/MyAccountSection.tsx
+web/src/helpers/api.ts
+web/src/helpers/marked.ts
+web/src/less/memo-content.less
+web/src/less/signin.less
+web/src/pages/Signin.tsx
+web/src/services/memoService.ts
+web/src/services/userService.ts
+web/src/types/models.d.ts
+web/vite.config.ts
+web/yarn.lock
+
+Author: steven:	web: update memo editor and about me
+web/src/components/AboutSiteDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/helpers/marked.ts
+web/src/labs/html2image/convertResourceToDataURL.ts
+web/src/labs/html2image/getFontsStyleElement.ts
+web/src/labs/html2image/index.ts
+web/src/less/about-site-dialog.less
+web/src/less/memolist.less
+
+Author: LeeShuang:	migrate frontend
+web/.eslintrc.json
+web/.gitignore
+web/.prettierrc
+web/LICENSE
+web/README.md
+web/index.html
+web/package.json
+web/public/fonts/DINPro-Bold.otf
+web/public/fonts/DINPro-Regular.otf
+web/public/fonts/UbuntuMono.ttf
+web/public/icons/arrow-left.svg
+web/public/icons/arrow-right-white.svg
+web/public/icons/arrow-right.svg
+web/public/icons/checkbox-active.svg
+web/public/icons/checkbox.svg
+web/public/icons/close.svg
+web/public/icons/edit-white.svg
+web/public/icons/edit.svg
+web/public/icons/menu.svg
+web/public/icons/more-white.svg
+web/public/icons/more.svg
+web/public/icons/search.svg
+web/public/icons/share.svg
+web/public/icons/tag.svg
+web/public/logo.svg
+web/src/App.tsx
+web/src/components/AboutSiteDialog.tsx
+web/src/components/BindWxUserIdDialog.tsx
+web/src/components/ChangePasswordDialog.tsx
+web/src/components/CreateQueryDialog.tsx
+web/src/components/DailyMemo.tsx
+web/src/components/DailyMemoDiaryDialog.tsx
+web/src/components/DeletedMemo.tsx
+web/src/components/Dialog.tsx
+web/src/components/Editor/Editor.tsx
+web/src/components/Image.tsx
+web/src/components/Memo.tsx
+web/src/components/MemoCardDialog.tsx
+web/src/components/MemoEditor.tsx
+web/src/components/MemoFilter.tsx
+web/src/components/MemoList.tsx
+web/src/components/MemosHeader.tsx
+web/src/components/MenuBtnsPopup.tsx
+web/src/components/MyAccountSection.tsx
+web/src/components/PreferencesSection.tsx
+web/src/components/PreviewImageDialog.tsx
+web/src/components/QueryList.tsx
+web/src/components/SearchBar.tsx
+web/src/components/ShareMemoImageDialog.tsx
+web/src/components/Sidebar.tsx
+web/src/components/TagList.tsx
+web/src/components/Toast.tsx
+web/src/components/UsageHeatMap.tsx
+web/src/components/UserBanner.tsx
+web/src/components/common/DatePicker.tsx
+web/src/components/common/OnlyWhen.tsx
+web/src/components/common/Selector.tsx
+web/src/helpers/api.ts
+web/src/helpers/consts.ts
+web/src/helpers/filter.ts
+web/src/helpers/marked.ts
+web/src/helpers/polyfill.ts
+web/src/helpers/storage.ts
+web/src/helpers/utils.ts
+web/src/helpers/validator.ts
+web/src/hooks/useDebounce.ts
+web/src/hooks/useLoading.ts
+web/src/hooks/useRefresh.ts
+web/src/hooks/useToggle.ts
+web/src/labs/Provider.tsx
+web/src/labs/combineReducers.ts
+web/src/labs/createStore.ts
+web/src/labs/html2image/convertResourceToDataURL.ts
+web/src/labs/html2image/getCloneStyledElement.ts
+web/src/labs/html2image/index.ts
+web/src/labs/useSelector.ts
+web/src/less/about-site-dialog.less
+web/src/less/app.less
+web/src/less/change-password-dialog.less
+web/src/less/common/date-picker.less
+web/src/less/common/selector.less
+web/src/less/create-query-dialog.less
+web/src/less/daily-memo-diary-dialog.less
+web/src/less/daily-memo.less
+web/src/less/dialog.less
+web/src/less/editor.less
+web/src/less/global.less
+web/src/less/home.less
+web/src/less/image.less
+web/src/less/memo-card-dialog.less
+web/src/less/memo-content.less
+web/src/less/memo-editor.less
+web/src/less/memo-filter.less
+web/src/less/memo-trash.less
+web/src/less/memo.less
+web/src/less/memolist.less
+web/src/less/memos-header.less
+web/src/less/menu-btns-popup.less
+web/src/less/mixin.less
+web/src/less/my-account-section.less
+web/src/less/preferences-section.less
+web/src/less/preview-image-dialog.less
+web/src/less/query-list.less
+web/src/less/search-bar.less
+web/src/less/setting.less
+web/src/less/share-memo-image-dialog.less
+web/src/less/siderbar.less
+web/src/less/signin.less
+web/src/less/tag-list.less
+web/src/less/toast.less
+web/src/less/usage-heat-map.less
+web/src/less/user-banner.less
+web/src/main.tsx
+web/src/pages/Home.tsx
+web/src/pages/MemoTrash.tsx
+web/src/pages/Memos.tsx
+web/src/pages/Setting.tsx
+web/src/pages/Signin.tsx
+web/src/routers/appRouter.tsx
+web/src/routers/homeRouter.tsx
+web/src/routers/index.ts
+web/src/services/README.md
+web/src/services/globalStateService.ts
+web/src/services/index.ts
+web/src/services/locationService.ts
+web/src/services/memoService.ts
+web/src/services/queryService.ts
+web/src/services/userService.ts
+web/src/stores/appContext.ts
+web/src/stores/appStore.ts
+web/src/stores/globalStateStore.ts
+web/src/stores/locationStore.ts
+web/src/stores/memoStore.ts
+web/src/stores/queryStore.ts
+web/src/stores/userStore.ts
+web/src/types/api.d.ts
+web/src/types/basic.d.ts
+web/src/types/filter.d.ts
+web/src/types/location.d.ts
+web/src/types/memo.d.ts
+web/src/types/models.d.ts
+web/src/types/view.d.ts
+web/tsconfig.json
+web/vite.config.ts
+web/yarn.lock
+
+Author: LeeShuang:	init project
+.gitignore
+README.md
+api/auth.go
+api/memo.go
+api/middlewares.go
+api/user.go
+api/utils.go
+common/error/codes.go
+common/error/error.go
+common/utils.go
+go.mod
+go.sum
+main.go
+resources/memos.db
+resources/sqlite.sql
+scripts/.air.toml
+store/memo.go
+store/sqlite.go
+store/user.go
