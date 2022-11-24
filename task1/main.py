@@ -27,7 +27,8 @@ def hypothesis_1_vse(error_guys):
         isAvgByPeople.update({eGuy: kbOtk})
         avgInOneFile = []
         kbOtk = []
-    print(isAvgByPeople)
+    for avg in isAvgByPeople:
+        print(avg, isAvgByPeople[avg])
 
 def hypothesis_1_ne_vse(error_guys):
     global file
@@ -52,8 +53,45 @@ def hypothesis_1_ne_vse(error_guys):
         moreThanAvgByPeople.update({eGuy:moreThanAvg})
         moreThanAvg = []
         avgInOneFile = []
-    print(moreThanAvgByPeople)
+    for more in moreThanAvgByPeople:
+        print(more, moreThanAvgByPeople[more])
 
+def reviewer_choice(prob_guys, commits_list):
+    filenames = {}
+    for user in prob_guys:
+        for filename in prob_guys[user]:
+            if filename not in filenames:
+                filenames[filename] = [user, prob_guys[user][filename]]
+            if filenames[filename][1] > prob_guys[user][filename]:
+                filenames[filename][0] = user
+                filenames[filename][1] = prob_guys[user][filename]
+    #for f in filenames:
+    #    print(f, filenames[f])
+        
+    commits_reviewers = {}
+    
+    for commit in commits_list:
+        if commit[4] == True:
+            continue
+        reviewers = {}
+        rev = ""
+        val = 0
+        for files in commit[2]:
+            try:
+                if filenames[files][0] not in reviewers:
+                    reviewers[filenames[files][0]] = 1
+                else:
+                    reviewers[filenames[files][0]] += 1
+            except Exception as exp:
+                pass
+        for reviewer in reviewers:
+            if reviewers[reviewer] > val:
+                val = reviewers[reviewer]
+                rev = reviewer
+        commits_reviewers[commit[3]] = rev
+
+    for i in commits_reviewers:
+        print(i, commits_reviewers[i])
 
 def prob(array, commits):
     prob_guys = {}
@@ -86,8 +124,10 @@ def prob(array, commits):
     for final in final_prob_with_commit:
         print(final, round(final_prob_with_commit[final]* 100, 4), "%")
         
+    return prob_guys
+        
 def load_commits():
-    repo = Repo("D:\\selfPro\\becoder-hack\\rep2\\memos")
+    repo = Repo("C:\\Users\\Timon\\Desktop\\becoder-hack\\task1\\knockout")
     commits_list = []
     error_guys = {}
 
@@ -97,12 +137,13 @@ def load_commits():
 
         commit_data = [commit.author.email, commit.message.lower(), list(commit.stats.files.keys()), commit, False]
         commits_list.append(commit_data)
-
+    reviewer_commits_list = commits_list.copy()
+    
     for isfix in range(0, len(commits_list)-1):
         if (commits_list[isfix][message].find("fix") != -1):
 
             correctly_detected = []
-            fixed_files = commits_list[isfix][files]
+            fixed_files = commits_list[isfix][files].copy()
             for i in range(isfix+1, len(commits_list)):
                 if not fixed_files:
                     break
@@ -133,7 +174,8 @@ def load_commits():
 
     #for check in error_guys:
         #print(check, error_guys[check])
-    prob(error_guys, commits_list)
+    prob_guys = prob(error_guys, commits_list)
+    reviewer_choice(prob_guys, reviewer_commits_list)
     hypothesis_1_vse(error_guys)
 
 
