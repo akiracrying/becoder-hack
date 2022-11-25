@@ -83,9 +83,10 @@ def hypothesis_1_vse(error_guys):
         f_deviation.write("\n\t@Fail rate: " + str(fail_rate.get(human)) + "\n")
     f_deviation.close()
     number = 1
-    while number != 0:
+    while number > 0:
         print("Enter number of developer to view graph between 1 and ", len(list(is_avg_by_people.keys())) - 1, ":")
-        print("Enter 0 code to exit program")
+        print("Enter 0 code to go to hypothesise 2")
+        print("Enter -1 code to exit program")
         try:
             number_input = input()
             int(number_input)
@@ -106,6 +107,8 @@ def hypothesis_1_vse(error_guys):
         except Exception as exp:
             print(exp)
             pass
+    if(number == -1):
+        exit(1)
 
 
 def reviewer_choice(prob_guys, commits_list):
