@@ -24,10 +24,11 @@ def hypothesis_1_vse(error_guys):
         for file in error_guys.get(eGuy):
             true_files = error_guys.get(eGuy).get(file)[1]
             false_files = error_guys.get(eGuy).get(file)[0]
-            if true_files != 0:
+            try:
                 avg_in_one_file.append(false_files / (true_files + false_files))
-            else:
-                avg_in_one_file.append(0.0)
+            except Exception as exp:
+                print(exp)
+                pass
         sum_avg = 0
         for i in avg_in_one_file:
             sum_avg += i
@@ -139,7 +140,7 @@ def prob(array, commits):
     f_probability.write("Probability stats:\n\n")
     for final in final_prob_with_commit:
         gap_prefix = " "
-        if final_prob_with_commit[final] * 100 >= 10:
+        if final_prob_with_commit[final] * 100 > 9:
             gap_prefix = ""
         f_probability.write(gap_prefix + str("{0:2.3f}".format((round(final_prob_with_commit[final] * 100, 4))))
                             + "% " + str(final) + "\n")
@@ -148,7 +149,7 @@ def prob(array, commits):
 
 
 def load_commits():
-    rep = Repo("D:\\selfPro\\becoder-hack\\rep2\\memos")
+    rep = Repo("D:\\selfPro\\becoder-repos\\knockout")
     commits_list = []
     error_guys = {}
     commits = list(rep.iter_commits())
