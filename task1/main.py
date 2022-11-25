@@ -17,6 +17,7 @@ def hypothesis_1_vse(error_guys):
     kb_otk = []
     is_avg_by_people = {}
     avg_array = []
+    fail_rate = {}
     more_avg_count = 0
     all_avg_count = 0
     for eGuy in error_guys:
@@ -24,7 +25,7 @@ def hypothesis_1_vse(error_guys):
             true_files = error_guys.get(eGuy).get(file)[1]
             false_files = error_guys.get(eGuy).get(file)[0]
             if true_files != 0:
-                avg_in_one_file.append(false_files / true_files)
+                avg_in_one_file.append(false_files / (true_files + false_files))
             else:
                 avg_in_one_file.append(0.0)
         sum_avg = 0
@@ -37,16 +38,21 @@ def hypothesis_1_vse(error_guys):
             if i > avg:
                 more_avg_count += 1
             all_avg_count += 1
+        fail_rate.update({eGuy: more_avg_count / all_avg_count})
         is_avg_by_people.update({eGuy: kb_otk})
         avg_in_one_file = []
         kb_otk = []
+        more_avg_count = 0
+        all_avg_count = 0
     f_deviation.write("Deviation stats:\n\n")
     for human in is_avg_by_people:
-        f_deviation.write("------------------------------------------------------\n")
+        f_deviation.write("\n$\n")
         f_deviation.write(str(human) + " " + str(is_avg_by_people.get(human)) + "\n")
+        f_deviation.write("\n\t@Fail rate: " + str(fail_rate.get(human)) + "\n")
+    f_deviation.close()
     number = 1
     while number != 0:
-        print("Enter number of developer to view graph between 1 and ", len(list(is_avg_by_people.keys())), ":")
+        print("Enter number of developer to view graph between 1 and ", len(list(is_avg_by_people.keys())) - 1, ":")
         print("Enter 0 code to exit program")
         try:
             number_input = input()
@@ -62,37 +68,12 @@ def hypothesis_1_vse(error_guys):
                 plt.figure(figsize=(12, 7))
                 plt.plot(x, y, marker='.')
                 plt.plot(x, y_1)
-                plt.title(str(number) + "-ый разработчик")
+                plt.title(list(is_avg_by_people.keys())[number - 1])
                 plt.grid(True)
                 plt.show()
         except Exception as exp:
             print(exp)
             pass
-
-
-def hypothesis_1_ne_vse(error_guys):
-    avg_in_one_file = []
-    more_than_avg = []
-    more_than_avg_by_people = {}
-    for eGuy in error_guys:
-        for file in error_guys.get(eGuy):
-            true_files = error_guys.get(eGuy).get(file)[1]
-            false_files = error_guys.get(eGuy).get(file)[0]
-            if true_files != 0:
-                avg_in_one_file.append(false_files / true_files)
-            else:
-                avg_in_one_file.append(0.0)
-        sum_avg = 0
-        for i in avg_in_one_file:
-            sum_avg += i
-        avg = sum_avg / len(avg_in_one_file)
-        for i in avg_in_one_file:
-            if i > avg:
-                more_than_avg.append(i)
-        more_than_avg_by_people.update({eGuy: more_than_avg})
-        more_than_avg = []
-        avg_in_one_file = []
-    print(more_than_avg_by_people)
 
 
 def reviewer_choice(prob_guys, commits_list):
@@ -128,6 +109,7 @@ def reviewer_choice(prob_guys, commits_list):
     f_reviewers.write("Reviewers stats:\n\n")
     for i in commits_reviewers:
         f_reviewers.write(str(i) + " " + str(commits_reviewers[i]) + "\n")
+    f_reviewers.close()
 
 
 def prob(array, commits):
@@ -161,6 +143,7 @@ def prob(array, commits):
             gap_prefix = ""
         f_probability.write(gap_prefix + str("{0:2.3f}".format((round(final_prob_with_commit[final] * 100, 4))))
                             + "% " + str(final) + "\n")
+    f_probability.close()
     return prob_guys
 
 
@@ -209,6 +192,7 @@ def load_commits():
     for check in error_guys:
         f_start.write("--------------------------------------------\n")
         f_start.write(str(check) + " " + str(error_guys[check]) + "\n")
+    f_start.close()
     prob_guys = prob(error_guys, commits_list)
     reviewer_choice(prob_guys, reviewer_commits_list)
     hypothesis_1_vse(error_guys)
@@ -216,7 +200,3 @@ def load_commits():
 
 if __name__ == "__main__":
     load_commits()
-    f_probability.close()
-    f_deviation.close()
-    f_start.close()
-    f_reviewers.close()
