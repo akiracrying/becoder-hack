@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from git import *
+from tkinter import Tk, filedialog
 
 author = 0
 message = 1
@@ -178,7 +179,10 @@ def prob(array, commits):
 
 
 def load_commits():
-    rep = Repo("D:\\selfPro\\becoder-hack\\rep2\\memos")
+    root.title = "Выберите папку с репозиторием"
+    open_file = filedialog.askdirectory()
+    print(open_file)
+    rep = Repo(open_file)
     commits_list = []
     error_guys = {}
     commits = list(rep.iter_commits())
@@ -229,4 +233,7 @@ def load_commits():
     check_hyphothesis_2(error_guys, prob_guys);
 
 if __name__ == "__main__":
+    root = Tk() 
+    root.withdraw() 
+    root.attributes('-topmost', True)
     load_commits()
