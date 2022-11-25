@@ -11,6 +11,38 @@ f_deviation = open("stats_deviation.txt", "w")
 f_start = open("stats_start.txt", "w")
 f_reviewers = open("stats_reviewers.txt", "w")
 
+def check_hyphothesis_2(error_guys,prob_guys):
+    graph_raw_data = {}
+    graph_data_x = []
+    graph_data_y = []
+    for guy in error_guys:
+        for files in prob_guys[guy]:
+            amount = error_guys[guy][files][0] + error_guys[guy][files][1];
+            if amount not in graph_raw_data:
+                graph_raw_data[amount] = [prob_guys[guy][files], 1]
+            else:
+                graph_raw_data[amount] = [(prob_guys[guy][files] + graph_raw_data[amount][0])/graph_raw_data[amount][1], graph_raw_data[amount][1] + 1]
+            print(error_guys[guy][files])
+            print(prob_guys[guy][files])
+    print(graph_raw_data);
+    for data in graph_raw_data:
+        graph_data_x.append(data)
+        graph_data_y.append(graph_raw_data[data][0])
+    for i in range(0, len(graph_data_x)):
+        for j in range(i, len(graph_data_x)):
+            if(graph_data_x[i] < graph_data_x[j]):
+                temp = graph_data_x[i]
+                graph_data_x[i] = graph_data_x[j]
+                graph_data_x[j] = temp;
+                temp = graph_data_y[i]
+                graph_data_y[i] = graph_data_y[j]
+                graph_data_y[j] = temp;
+    x = graph_data_x
+    y = graph_data_y
+    plt.figure(figsize=(12, 7))
+    plt.plot(x, y, marker='.')
+    plt.grid(True)
+    plt.show()
 
 def hypothesis_1_vse(error_guys):
     avg_in_one_file = []
@@ -148,7 +180,7 @@ def prob(array, commits):
 
 
 def load_commits():
-    rep = Repo("D:\\selfPro\\becoder-hack\\rep2\\memos")
+    rep = Repo("~/Documents/Projects/memos")
     commits_list = []
     error_guys = {}
     commits = list(rep.iter_commits())
@@ -196,7 +228,7 @@ def load_commits():
     prob_guys = prob(error_guys, commits_list)
     reviewer_choice(prob_guys, reviewer_commits_list)
     hypothesis_1_vse(error_guys)
-
+    check_hyphothesis_2(error_guys, prob_guys);
 
 if __name__ == "__main__":
     load_commits()
