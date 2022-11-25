@@ -4,7 +4,7 @@ from git import *
 
 author = 0
 message = 1
-files = 2
+files_index = 2
 
 f_probability = open("stats_probability.txt", "w")
 f_deviation = open("stats_deviation.txt", "w")
@@ -17,7 +17,7 @@ def check_hyphothesis_2(error_guys,prob_guys):
     graph_data_y = []
     for guy in error_guys:
         for files in prob_guys[guy]:
-            amount = error_guys[guy][files][0] + error_guys[guy][files][1];
+            amount = error_guys[guy][files][0] + error_guys[guy][files][1]
             if amount not in graph_raw_data:
                 graph_raw_data[amount] = [prob_guys[guy][files], 1]
             else:
@@ -28,13 +28,13 @@ def check_hyphothesis_2(error_guys,prob_guys):
         graph_data_y.append(graph_raw_data[data][0])
     for i in range(0, len(graph_data_x)):
         for j in range(i, len(graph_data_x)):
-            if(graph_data_x[i] < graph_data_x[j]):
+            if graph_data_x[i] < graph_data_x[j]:
                 temp = graph_data_x[i]
                 graph_data_x[i] = graph_data_x[j]
-                graph_data_x[j] = temp;
+                graph_data_x[j] = temp
                 temp = graph_data_y[i]
                 graph_data_y[i] = graph_data_y[j]
-                graph_data_y[j] = temp;
+                graph_data_y[j] = temp
     x = graph_data_x
     y = graph_data_y
     plt.figure(figsize=(12, 7))
@@ -56,7 +56,7 @@ def hypothesis_1_vse(error_guys):
             false_files = error_guys.get(eGuy).get(file)[0]
             try:
                 avg_in_one_file.append(false_files / (true_files + false_files))
-            except Exception as exp:
+            except Exception:
                 pass
         sum_avg = 0
         for i in avg_in_one_file:
@@ -102,9 +102,9 @@ def hypothesis_1_vse(error_guys):
                 plt.title(list(is_avg_by_people.keys())[number - 1])
                 plt.grid(True)
                 plt.show()
-        except Exception as exp:
+        except Exception:
             pass
-    if(number == -1):
+    if number == -1:
         exit(1)
 
 
@@ -130,7 +130,7 @@ def reviewer_choice(prob_guys, commits_list):
                     reviewers[filenames[files_commit][0]] = 1
                 else:
                     reviewers[filenames[files_commit][0]] += 1
-            except Exception as exp:
+            except Exception:
                 pass
         for reviewer in reviewers:
             if reviewers[reviewer] > val:
@@ -160,7 +160,7 @@ def prob(array, commits):
         for filename in single_commit[2]:
             try:
                 multiplier *= (1 - (prob_guys[single_commit[0]][filename]))
-            except Exception as exp:
+            except Exception:
                 pass
         if single_commit[4] is True:
             final_prob_with_commit[single_commit[3].hexsha + " FIXED"] = 1 - multiplier
@@ -226,7 +226,7 @@ def load_commits():
     prob_guys = prob(error_guys, commits_list)
     reviewer_choice(prob_guys, reviewer_commits_list)
     hypothesis_1_vse(error_guys)
-    check_hyphothesis_2(error_guys, prob_guys);
+    check_hyphothesis_2(error_guys, prob_guys)
 
 if __name__ == "__main__":
     load_commits()
