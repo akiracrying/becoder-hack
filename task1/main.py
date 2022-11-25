@@ -178,7 +178,7 @@ def prob(array, commits):
 
 
 def load_commits():
-    rep = Repo("D:\\selfPro\\becoder-hack\\rep2\\memos")
+    rep = Repo("..\\memos")
     commits_list = []
     error_guys = {}
     commits = list(rep.iter_commits())
@@ -190,11 +190,11 @@ def load_commits():
 
     for is_fix in range(0, len(commits_list) - 1):
         if commits_list[is_fix][message].find("fix") != -1:
-            fixed_files = commits_list[is_fix][files].copy()
+            fixed_files = commits_list[is_fix][files_index].copy()
             for i in range(is_fix + 1, len(commits_list)):
                 if not fixed_files:
                     break
-                error_files = commits_list[i][files]
+                error_files = commits_list[i][files_index]
                 correctly_detected = list(set(fixed_files) & set(error_files))
                 for item in correctly_detected:
                     fixed_files.remove(item)
@@ -210,7 +210,7 @@ def load_commits():
                     else:
                         error_guys[commits_list[i][author]][filename][0] += 1
         else:
-            user_changed_files = commits_list[is_fix + 1][files]
+            user_changed_files = commits_list[is_fix + 1][files_index]
             if commits_list[is_fix + 1][author] not in error_guys:
                 error_guys[commits_list[is_fix + 1][author]] = {}
             for filename in user_changed_files:
