@@ -21,10 +21,8 @@ def check_hyphothesis_2(error_guys,prob_guys):
             if amount not in graph_raw_data:
                 graph_raw_data[amount] = [prob_guys[guy][files], 1]
             else:
-                graph_raw_data[amount] = [(prob_guys[guy][files] + graph_raw_data[amount][0])/graph_raw_data[amount][1], graph_raw_data[amount][1] + 1]
-            print(error_guys[guy][files])
-            print(prob_guys[guy][files])
-    print(graph_raw_data);
+                graph_raw_data[amount] = [(prob_guys[guy][files] + graph_raw_data[amount][0])/
+                graph_raw_data[amount][1], graph_raw_data[amount][1] + 1]
     for data in graph_raw_data:
         graph_data_x.append(data)
         graph_data_y.append(graph_raw_data[data][0])
@@ -105,7 +103,6 @@ def hypothesis_1_vse(error_guys):
                 plt.grid(True)
                 plt.show()
         except Exception as exp:
-            print(exp)
             pass
     if(number == -1):
         exit(1)
@@ -134,7 +131,6 @@ def reviewer_choice(prob_guys, commits_list):
                 else:
                     reviewers[filenames[files_commit][0]] += 1
             except Exception as exp:
-                print(exp)
                 pass
         for reviewer in reviewers:
             if reviewers[reviewer] > val:
@@ -165,7 +161,6 @@ def prob(array, commits):
             try:
                 multiplier *= (1 - (prob_guys[single_commit[0]][filename]))
             except Exception as exp:
-                print(exp)
                 pass
         if single_commit[4] is True:
             final_prob_with_commit[single_commit[3].hexsha + " FIXED"] = 1 - multiplier
@@ -183,7 +178,7 @@ def prob(array, commits):
 
 
 def load_commits():
-    rep = Repo("~/Documents/Projects/memos")
+    rep = Repo("~/Documents/Projects/angular")
     commits_list = []
     error_guys = {}
     commits = list(rep.iter_commits())
