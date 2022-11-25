@@ -60,7 +60,7 @@
     Пример графика:
 
     <div>
-        <img src = ""></img>
+        <img src = "https://github.com/akiracrying/becoder-hack/blob/task1/img/graph_1.jpg"></img>
     </div>
 
 2. На основе зависимости между количеством изменений файла и средняя вероятность ошибки за такого количество изменений.
@@ -68,5 +68,5 @@
     Пример графика:
 
     <div>
-        <img src = ""></img>
+        <img src = "https://github.com/akiracrying/becoder-hack/blob/task1/img/graph_2.jpg"></img>
     </div>
